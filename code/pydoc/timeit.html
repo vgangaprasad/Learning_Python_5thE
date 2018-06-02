@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module timeit</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>timeit</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:///C:/python33/lib/timeit.py">c:\python33\lib\timeit.py</a></font></td></tr></table>
+    <p><tt>Tool&nbsp;for&nbsp;measuring&nbsp;execution&nbsp;time&nbsp;of&nbsp;small&nbsp;code&nbsp;snippets.<br>
+&nbsp;<br>
+This&nbsp;module&nbsp;avoids&nbsp;a&nbsp;number&nbsp;of&nbsp;common&nbsp;traps&nbsp;for&nbsp;measuring&nbsp;execution<br>
+times.&nbsp;&nbsp;See&nbsp;also&nbsp;Tim&nbsp;Peters'&nbsp;introduction&nbsp;to&nbsp;the&nbsp;Algorithms&nbsp;chapter&nbsp;in<br>
+the&nbsp;Python&nbsp;Cookbook,&nbsp;published&nbsp;by&nbsp;O'Reilly.<br>
+&nbsp;<br>
+Library&nbsp;usage:&nbsp;see&nbsp;the&nbsp;<a href="#Timer">Timer</a>&nbsp;class.<br>
+&nbsp;<br>
+Command&nbsp;line&nbsp;usage:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;python&nbsp;timeit.py&nbsp;[-n&nbsp;N]&nbsp;[-r&nbsp;N]&nbsp;[-s&nbsp;S]&nbsp;[-t]&nbsp;[-c]&nbsp;[-p]&nbsp;[-h]&nbsp;[--]&nbsp;[statement]<br>
+&nbsp;<br>
+Options:<br>
+&nbsp;&nbsp;-n/--number&nbsp;N:&nbsp;how&nbsp;many&nbsp;times&nbsp;to&nbsp;execute&nbsp;'statement'&nbsp;(default:&nbsp;see&nbsp;below)<br>
+&nbsp;&nbsp;-r/--repeat&nbsp;N:&nbsp;how&nbsp;many&nbsp;times&nbsp;to&nbsp;repeat&nbsp;the&nbsp;timer&nbsp;(default&nbsp;3)<br>
+&nbsp;&nbsp;-s/--setup&nbsp;S:&nbsp;statement&nbsp;to&nbsp;be&nbsp;executed&nbsp;once&nbsp;initially&nbsp;(default&nbsp;'pass')<br>
+&nbsp;&nbsp;-p/--process:&nbsp;use&nbsp;time.process_time()&nbsp;(default&nbsp;is&nbsp;time.perf_counter())<br>
+&nbsp;&nbsp;-t/--time:&nbsp;use&nbsp;time.time()&nbsp;(deprecated)<br>
+&nbsp;&nbsp;-c/--clock:&nbsp;use&nbsp;time.clock()&nbsp;(deprecated)<br>
+&nbsp;&nbsp;-v/--verbose:&nbsp;print&nbsp;raw&nbsp;timing&nbsp;results;&nbsp;repeat&nbsp;for&nbsp;more&nbsp;digits&nbsp;precision<br>
+&nbsp;&nbsp;-h/--help:&nbsp;print&nbsp;this&nbsp;usage&nbsp;message&nbsp;and&nbsp;exit<br>
+&nbsp;&nbsp;--:&nbsp;separate&nbsp;options&nbsp;from&nbsp;statement,&nbsp;use&nbsp;when&nbsp;statement&nbsp;starts&nbsp;with&nbsp;-<br>
+&nbsp;&nbsp;statement:&nbsp;statement&nbsp;to&nbsp;be&nbsp;timed&nbsp;(default&nbsp;'pass')<br>
+&nbsp;<br>
+A&nbsp;multi-line&nbsp;statement&nbsp;may&nbsp;be&nbsp;given&nbsp;by&nbsp;specifying&nbsp;each&nbsp;line&nbsp;as&nbsp;a<br>
+separate&nbsp;argument;&nbsp;indented&nbsp;lines&nbsp;are&nbsp;possible&nbsp;by&nbsp;enclosing&nbsp;an<br>
+argument&nbsp;in&nbsp;quotes&nbsp;and&nbsp;using&nbsp;leading&nbsp;spaces.&nbsp;&nbsp;Multiple&nbsp;-s&nbsp;options&nbsp;are<br>
+treated&nbsp;similarly.<br>
+&nbsp;<br>
+If&nbsp;-n&nbsp;is&nbsp;not&nbsp;given,&nbsp;a&nbsp;suitable&nbsp;number&nbsp;of&nbsp;loops&nbsp;is&nbsp;calculated&nbsp;by&nbsp;trying<br>
+successive&nbsp;powers&nbsp;of&nbsp;10&nbsp;until&nbsp;the&nbsp;total&nbsp;time&nbsp;is&nbsp;at&nbsp;least&nbsp;0.2&nbsp;seconds.<br>
+&nbsp;<br>
+The&nbsp;difference&nbsp;in&nbsp;default&nbsp;timer&nbsp;function&nbsp;is&nbsp;because&nbsp;on&nbsp;Windows,<br>
+clock()&nbsp;has&nbsp;microsecond&nbsp;granularity&nbsp;but&nbsp;time()'s&nbsp;granularity&nbsp;is&nbsp;1/60th<br>
+of&nbsp;a&nbsp;second;&nbsp;on&nbsp;Unix,&nbsp;clock()&nbsp;has&nbsp;1/100th&nbsp;of&nbsp;a&nbsp;second&nbsp;granularity&nbsp;and<br>
+time()&nbsp;is&nbsp;much&nbsp;more&nbsp;precise.&nbsp;&nbsp;On&nbsp;either&nbsp;platform,&nbsp;the&nbsp;default&nbsp;timer<br>
+functions&nbsp;measure&nbsp;wall&nbsp;clock&nbsp;time,&nbsp;not&nbsp;the&nbsp;CPU&nbsp;time.&nbsp;&nbsp;This&nbsp;means&nbsp;that<br>
+other&nbsp;processes&nbsp;running&nbsp;on&nbsp;the&nbsp;same&nbsp;computer&nbsp;may&nbsp;interfere&nbsp;with&nbsp;the<br>
+timing.&nbsp;&nbsp;The&nbsp;best&nbsp;thing&nbsp;to&nbsp;do&nbsp;when&nbsp;accurate&nbsp;timing&nbsp;is&nbsp;necessary&nbsp;is&nbsp;to<br>
+repeat&nbsp;the&nbsp;timing&nbsp;a&nbsp;few&nbsp;times&nbsp;and&nbsp;use&nbsp;the&nbsp;best&nbsp;time.&nbsp;&nbsp;The&nbsp;-r&nbsp;option&nbsp;is<br>
+good&nbsp;for&nbsp;this;&nbsp;the&nbsp;default&nbsp;of&nbsp;3&nbsp;repetitions&nbsp;is&nbsp;probably&nbsp;enough&nbsp;in&nbsp;most<br>
+cases.&nbsp;&nbsp;On&nbsp;Unix,&nbsp;you&nbsp;can&nbsp;use&nbsp;clock()&nbsp;to&nbsp;measure&nbsp;CPU&nbsp;time.<br>
+&nbsp;<br>
+Note:&nbsp;there&nbsp;is&nbsp;a&nbsp;certain&nbsp;baseline&nbsp;overhead&nbsp;associated&nbsp;with&nbsp;executing&nbsp;a<br>
+pass&nbsp;statement.&nbsp;&nbsp;The&nbsp;code&nbsp;here&nbsp;doesn't&nbsp;try&nbsp;to&nbsp;hide&nbsp;it,&nbsp;but&nbsp;you&nbsp;should<br>
+be&nbsp;aware&nbsp;of&nbsp;it.&nbsp;&nbsp;The&nbsp;baseline&nbsp;overhead&nbsp;can&nbsp;be&nbsp;measured&nbsp;by&nbsp;invoking&nbsp;the<br>
+program&nbsp;without&nbsp;arguments.<br>
+&nbsp;<br>
+The&nbsp;baseline&nbsp;overhead&nbsp;differs&nbsp;between&nbsp;Python&nbsp;versions!&nbsp;&nbsp;Also,&nbsp;to<br>
+fairly&nbsp;compare&nbsp;older&nbsp;Python&nbsp;versions&nbsp;to&nbsp;Python&nbsp;2.3,&nbsp;you&nbsp;may&nbsp;want&nbsp;to<br>
+use&nbsp;python&nbsp;-O&nbsp;for&nbsp;the&nbsp;older&nbsp;versions&nbsp;to&nbsp;avoid&nbsp;timing&nbsp;SET_LINENO<br>
+instructions.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="gc.html">gc</a><br>
+</td><td width="25%" valign=top><a href="itertools.html">itertools</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="timeit.html#Timer">Timer</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Timer">class <strong>Timer</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Class&nbsp;for&nbsp;timing&nbsp;execution&nbsp;speed&nbsp;of&nbsp;small&nbsp;code&nbsp;snippets.<br>
+&nbsp;<br>
+The&nbsp;constructor&nbsp;takes&nbsp;a&nbsp;statement&nbsp;to&nbsp;be&nbsp;timed,&nbsp;an&nbsp;additional<br>
+statement&nbsp;used&nbsp;for&nbsp;setup,&nbsp;and&nbsp;a&nbsp;timer&nbsp;function.&nbsp;&nbsp;Both&nbsp;statements<br>
+default&nbsp;to&nbsp;'pass';&nbsp;the&nbsp;timer&nbsp;function&nbsp;is&nbsp;platform-dependent&nbsp;(see<br>
+module&nbsp;doc&nbsp;string).<br>
+&nbsp;<br>
+To&nbsp;measure&nbsp;the&nbsp;execution&nbsp;time&nbsp;of&nbsp;the&nbsp;first&nbsp;statement,&nbsp;use&nbsp;the<br>
+<a href="#Timer-timeit">timeit</a>()&nbsp;method.&nbsp;&nbsp;The&nbsp;<a href="#Timer-repeat">repeat</a>()&nbsp;method&nbsp;is&nbsp;a&nbsp;convenience&nbsp;to&nbsp;call<br>
+<a href="#Timer-timeit">timeit</a>()&nbsp;multiple&nbsp;times&nbsp;and&nbsp;return&nbsp;a&nbsp;list&nbsp;of&nbsp;results.<br>
+&nbsp;<br>
+The&nbsp;statements&nbsp;may&nbsp;contain&nbsp;newlines,&nbsp;as&nbsp;long&nbsp;as&nbsp;they&nbsp;don't&nbsp;contain<br>
+multi-line&nbsp;string&nbsp;literals.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Timer-__init__"><strong>__init__</strong></a>(self, stmt<font color="#909090">='pass'</font>, setup<font color="#909090">='pass'</font>, timer<font color="#909090">=&lt;built-in function perf_counter&gt;</font>)</dt><dd><tt>Constructor.&nbsp;&nbsp;See&nbsp;class&nbsp;doc&nbsp;string.</tt></dd></dl>
+
+<dl><dt><a name="Timer-print_exc"><strong>print_exc</strong></a>(self, file<font color="#909090">=None</font>)</dt><dd><tt>Helper&nbsp;to&nbsp;print&nbsp;a&nbsp;traceback&nbsp;from&nbsp;the&nbsp;timed&nbsp;code.<br>
+&nbsp;<br>
+Typical&nbsp;use:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;t&nbsp;=&nbsp;<a href="#Timer">Timer</a>(...)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;outside&nbsp;the&nbsp;try/except<br>
+&nbsp;&nbsp;&nbsp;&nbsp;try:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.<a href="#Timer-timeit">timeit</a>(...)&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;or&nbsp;t.<a href="#Timer-repeat">repeat</a>(...)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;except:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.<a href="#Timer-print_exc">print_exc</a>()<br>
+&nbsp;<br>
+The&nbsp;advantage&nbsp;over&nbsp;the&nbsp;standard&nbsp;traceback&nbsp;is&nbsp;that&nbsp;source&nbsp;lines<br>
+in&nbsp;the&nbsp;compiled&nbsp;template&nbsp;will&nbsp;be&nbsp;displayed.<br>
+&nbsp;<br>
+The&nbsp;optional&nbsp;file&nbsp;argument&nbsp;directs&nbsp;where&nbsp;the&nbsp;traceback&nbsp;is<br>
+sent;&nbsp;it&nbsp;defaults&nbsp;to&nbsp;sys.stderr.</tt></dd></dl>
+
+<dl><dt><a name="Timer-repeat"><strong>repeat</strong></a>(self, repeat<font color="#909090">=3</font>, number<font color="#909090">=1000000</font>)</dt><dd><tt>Call&nbsp;<a href="#Timer-timeit">timeit</a>()&nbsp;a&nbsp;few&nbsp;times.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;a&nbsp;convenience&nbsp;function&nbsp;that&nbsp;calls&nbsp;the&nbsp;<a href="#Timer-timeit">timeit</a>()<br>
+repeatedly,&nbsp;returning&nbsp;a&nbsp;list&nbsp;of&nbsp;results.&nbsp;&nbsp;The&nbsp;first&nbsp;argument<br>
+specifies&nbsp;how&nbsp;many&nbsp;times&nbsp;to&nbsp;call&nbsp;<a href="#Timer-timeit">timeit</a>(),&nbsp;defaulting&nbsp;to&nbsp;3;<br>
+the&nbsp;second&nbsp;argument&nbsp;specifies&nbsp;the&nbsp;timer&nbsp;argument,&nbsp;defaulting<br>
+to&nbsp;one&nbsp;million.<br>
+&nbsp;<br>
+Note:&nbsp;it's&nbsp;tempting&nbsp;to&nbsp;calculate&nbsp;mean&nbsp;and&nbsp;standard&nbsp;deviation<br>
+from&nbsp;the&nbsp;result&nbsp;vector&nbsp;and&nbsp;report&nbsp;these.&nbsp;&nbsp;However,&nbsp;this&nbsp;is&nbsp;not<br>
+very&nbsp;useful.&nbsp;&nbsp;In&nbsp;a&nbsp;typical&nbsp;case,&nbsp;the&nbsp;lowest&nbsp;value&nbsp;gives&nbsp;a<br>
+lower&nbsp;bound&nbsp;for&nbsp;how&nbsp;fast&nbsp;your&nbsp;machine&nbsp;can&nbsp;run&nbsp;the&nbsp;given&nbsp;code<br>
+snippet;&nbsp;higher&nbsp;values&nbsp;in&nbsp;the&nbsp;result&nbsp;vector&nbsp;are&nbsp;typically&nbsp;not<br>
+caused&nbsp;by&nbsp;variability&nbsp;in&nbsp;Python's&nbsp;speed,&nbsp;but&nbsp;by&nbsp;other<br>
+processes&nbsp;interfering&nbsp;with&nbsp;your&nbsp;timing&nbsp;accuracy.&nbsp;&nbsp;So&nbsp;the&nbsp;min()<br>
+of&nbsp;the&nbsp;result&nbsp;is&nbsp;probably&nbsp;the&nbsp;only&nbsp;number&nbsp;you&nbsp;should&nbsp;be<br>
+interested&nbsp;in.&nbsp;&nbsp;After&nbsp;that,&nbsp;you&nbsp;should&nbsp;look&nbsp;at&nbsp;the&nbsp;entire<br>
+vector&nbsp;and&nbsp;apply&nbsp;common&nbsp;sense&nbsp;rather&nbsp;than&nbsp;statistics.</tt></dd></dl>
+
+<dl><dt><a name="Timer-timeit"><strong>timeit</strong></a>(self, number<font color="#909090">=1000000</font>)</dt><dd><tt>Time&nbsp;'number'&nbsp;executions&nbsp;of&nbsp;the&nbsp;main&nbsp;statement.<br>
+&nbsp;<br>
+To&nbsp;be&nbsp;precise,&nbsp;this&nbsp;executes&nbsp;the&nbsp;setup&nbsp;statement&nbsp;once,&nbsp;and<br>
+then&nbsp;returns&nbsp;the&nbsp;time&nbsp;it&nbsp;takes&nbsp;to&nbsp;execute&nbsp;the&nbsp;main&nbsp;statement<br>
+a&nbsp;number&nbsp;of&nbsp;times,&nbsp;as&nbsp;a&nbsp;float&nbsp;measured&nbsp;in&nbsp;seconds.&nbsp;&nbsp;The<br>
+argument&nbsp;is&nbsp;the&nbsp;number&nbsp;of&nbsp;times&nbsp;through&nbsp;the&nbsp;loop,&nbsp;defaulting<br>
+to&nbsp;one&nbsp;million.&nbsp;&nbsp;The&nbsp;main&nbsp;statement,&nbsp;the&nbsp;setup&nbsp;statement&nbsp;and<br>
+the&nbsp;timer&nbsp;function&nbsp;to&nbsp;be&nbsp;used&nbsp;are&nbsp;passed&nbsp;to&nbsp;the&nbsp;constructor.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__all__</strong> = ['Timer']</td></tr></table>
+</body></html>
