@@ -1,0 +1,330 @@
+<Instance of MyButton, address 43363688:
+ _ListTree__visited={}
+ _name=43363688
+ _tclCommands=[]
+ _w=.43363688
+ children={}
+ master=.
+ tk=<tkapp object at 0x0000000002966238>
+ widgetName=button
+
+....<Class MyButton, address 44812488:
+     __doc__
+     __module__
+     __qualname__
+
+........<Class ListTree, address 35107976:
+         _ListTree__attrnames=<function ListTree.__attrnames at 0x000000000295D268>
+         _ListTree__listclass=<function ListTree.__listclass at 0x000000000295D2F0>
+         __dict__
+         __doc__
+         __module__
+         __qualname__
+         __str__
+         __weakref__
+
+............<Class object, address 506770624:
+             __class__
+             __delattr__
+             __dir__
+             __doc__
+             __eq__
+             __format__
+             __ge__
+             __getattribute__
+             __gt__
+             __hash__
+             __init__
+             __le__
+             __lt__
+             __ne__
+             __new__
+             __reduce__
+             __reduce_ex__
+             __repr__
+             __setattr__
+             __sizeof__
+             __str__
+             __subclasshook__
+............>
+........>
+
+........<Class Button, address 44789720:
+         __doc__
+         __init__
+         __module__
+         __qualname__
+         flash=<function Button.flash at 0x00000000029D6D08>
+         invoke=<function Button.invoke at 0x00000000029D6D90>
+         tkButtonDown=<function Button.tkButtonDown at 0x00000000029D6B70>
+         tkButtonEnter=<function Button.tkButtonEnter at 0x00000000029D6A60>
+         tkButtonInvoke=<function Button.tkButtonInvoke at 0x00000000029D6C80>
+         tkButtonLeave=<function Button.tkButtonLeave at 0x00000000029D6AE8>
+         tkButtonUp=<function Button.tkButtonUp at 0x00000000029D6BF8>
+
+............<Class Widget, address 44787896:
+             __doc__
+             __module__
+             __qualname__
+
+................<Class BaseWidget, address 44786984:
+                 __doc__
+                 __init__
+                 __module__
+                 __qualname__
+                 _do=<function BaseWidget._do at 0x00000000029D68C8>
+                 _setup=<function BaseWidget._setup at 0x00000000029D6730>
+                 destroy=<function BaseWidget.destroy at 0x00000000029D6840>
+
+....................<Class Misc, address 44063528:
+                     _Misc__winfo_getint=<function Misc.__winfo_getint at 0x00000000029D1950>
+                     _Misc__winfo_parseitem=<function Misc.__winfo_parseitem at 0x00000000029D18C8>
+                     __dict__
+                     __doc__
+                     __getitem__
+                     __module__
+                     __qualname__
+                     __setitem__
+                     __str__
+                     __weakref__
+                     _bind=<function Misc._bind at 0x00000000029D1F28>
+                     _configure=<function Misc._configure at 0x00000000029D2A60>
+                     _displayof=<function Misc._displayof at 0x00000000029D2620>
+                     _getboolean=<function Misc._getboolean at 0x00000000029D2598>
+                     _getdoubles=<function Misc._getdoubles at 0x00000000029D2510>
+                     _getints=<function Misc._getints at 0x00000000029D2488>
+                     _grid_configure=<function Misc._grid_configure at 0x00000000029D30D0>
+                     _nametowidget=<function Misc.nametowidget at 0x00000000029D27B8>
+                     _noarg_=['_noarg_']
+                     _options=<function Misc._options at 0x00000000029D2730>
+                     _register=<function Misc._register at 0x00000000029D2840>
+                     _report_exception=<function Misc._report_exception at 0x00000000029D29D8>
+                     _root=<function Misc._root at 0x00000000029D28C8>
+                     _subst_format=('%#', '%b', '%f', '%h', '%k', '%s', '%t', '%w', '%x', '%y', '%A', '%E', '%K', '%N', '%W', '%T', '%X', '%Y', '%D')
+                     _subst_format_str=%# %b %f %h %k %s %t %w %x %y %A %E %K %N %W %T %X %Y %D
+                     _substitute=<function Misc._substitute at 0x00000000029D2950>
+                     _tclCommands=None
+                     _windowingsystem=<property object at 0x0000000002A83BD8>
+                     after=<function Misc.after at 0x00000000029CF400>
+                     after_cancel=<function Misc.after_cancel at 0x00000000029CF510>
+                     after_idle=<function Misc.after_idle at 0x00000000029CF488>
+                     anchor=<function Misc.grid_anchor at 0x00000000029D2F28>
+                     bbox=<function Misc.grid_bbox at 0x00000000029D3048>
+                     bell=<function Misc.bell at 0x00000000029CF598>
+                     bind=<function Misc.bind at 0x00000000029D2048>
+                     bind_all=<function Misc.bind_all at 0x00000000029D2158>
+                     bind_class=<function Misc.bind_class at 0x00000000029D2268>
+                     bindtags=<function Misc.bindtags at 0x00000000029D1EA0>
+                     cget=<function Misc.cget at 0x00000000029D2B70>
+                     clipboard_append=<function Misc.clipboard_append at 0x00000000029CF730>
+                     clipboard_clear=<function Misc.clipboard_clear at 0x00000000029CF6A8>
+                     clipboard_get=<function Misc.clipboard_get at 0x00000000029CF620>
+                     colormodel=<function Misc.colormodel at 0x00000000029D0158>
+                     columnconfigure=<function Misc.grid_columnconfigure at 0x00000000029D3158>
+                     config=<function Misc.configure at 0x00000000029D2AE8>
+                     configure=<function Misc.configure at 0x00000000029D2AE8>
+                     deletecommand=<function Misc.deletecommand at 0x00000000029CC950>
+                     destroy=<function Misc.destroy at 0x00000000029CC8C8>
+                     event_add=<function Misc.event_add at 0x00000000029D3488>
+                     event_delete=<function Misc.event_delete at 0x00000000029D3510>
+                     event_generate=<function Misc.event_generate at 0x00000000029D3598>
+                     event_info=<function Misc.event_info at 0x00000000029D3620>
+                     focus=<function Misc.focus_set at 0x00000000029CCF28>
+                     focus_displayof=<function Misc.focus_displayof at 0x00000000029CF158>
+                     focus_force=<function Misc.focus_force at 0x00000000029CF048>
+                     focus_get=<function Misc.focus_get at 0x00000000029CF0D0>
+                     focus_lastfor=<function Misc.focus_lastfor at 0x00000000029CF1E0>
+                     focus_set=<function Misc.focus_set at 0x00000000029CCF28>
+                     getboolean=<function Misc.getboolean at 0x00000000029CCEA0>
+                     getdouble=<class 'float'>
+                     getint=<class 'int'>
+                     getvar=<function Misc.getvar at 0x00000000029CCE18>
+                     grab_current=<function Misc.grab_current at 0x00000000029CF7B8>
+                     grab_release=<function Misc.grab_release at 0x00000000029CF840>
+                     grab_set=<function Misc.grab_set at 0x00000000029CF8C8>
+                     grab_set_global=<function Misc.grab_set_global at 0x00000000029CF950>
+                     grab_status=<function Misc.grab_status at 0x00000000029CF9D8>
+                     grid_anchor=<function Misc.grid_anchor at 0x00000000029D2F28>
+                     grid_bbox=<function Misc.grid_bbox at 0x00000000029D3048>
+                     grid_columnconfigure=<function Misc.grid_columnconfigure at 0x00000000029D3158>
+                     grid_location=<function Misc.grid_location at 0x00000000029D31E0>
+                     grid_propagate=<function Misc.grid_propagate at 0x00000000029D3268>
+                     grid_rowconfigure=<function Misc.grid_rowconfigure at 0x00000000029D32F0>
+                     grid_size=<function Misc.grid_size at 0x00000000029D3378>
+                     grid_slaves=<function Misc.grid_slaves at 0x00000000029D3400>
+                     image_names=<function Misc.image_names at 0x00000000029D36A8>
+                     image_types=<function Misc.image_types at 0x00000000029D3730>
+                     keys=<function Misc.keys at 0x00000000029D2C80>
+                     lift=<function Misc.tkraise at 0x00000000029D00D0>
+                     lower=<function Misc.lower at 0x00000000029D0048>
+                     mainloop=<function Misc.mainloop at 0x00000000029D2378>
+                     nametowidget=<function Misc.nametowidget at 0x00000000029D27B8>
+                     option_add=<function Misc.option_add at 0x00000000029CFA60>
+                     option_clear=<function Misc.option_clear at 0x00000000029CFAE8>
+                     option_get=<function Misc.option_get at 0x00000000029CFB70>
+                     option_readfile=<function Misc.option_readfile at 0x00000000029CFBF8>
+                     pack_propagate=<function Misc.pack_propagate at 0x00000000029D2D90>
+                     pack_slaves=<function Misc.pack_slaves at 0x00000000029D2E18>
+                     place_slaves=<function Misc.place_slaves at 0x00000000029D2EA0>
+                     propagate=<function Misc.pack_propagate at 0x00000000029D2D90>
+                     quit=<function Misc.quit at 0x00000000029D2400>
+                     register=<function Misc._register at 0x00000000029D2840>
+                     rowconfigure=<function Misc.grid_rowconfigure at 0x00000000029D32F0>
+                     selection_clear=<function Misc.selection_clear at 0x00000000029CFC80>
+                     selection_get=<function Misc.selection_get at 0x00000000029CFD08>
+                     selection_handle=<function Misc.selection_handle at 0x00000000029CFD90>
+                     selection_own=<function Misc.selection_own at 0x00000000029CFE18>
+                     selection_own_get=<function Misc.selection_own_get at 0x00000000029CFEA0>
+                     send=<function Misc.send at 0x00000000029CFF28>
+                     setvar=<function Misc.setvar at 0x00000000029CCD90>
+                     size=<function Misc.grid_size at 0x00000000029D3378>
+                     slaves=<function Misc.pack_slaves at 0x00000000029D2E18>
+                     tk_bisque=<function Misc.tk_bisque at 0x00000000029CCA60>
+                     tk_focusFollowsMouse=<function Misc.tk_focusFollowsMouse at 0x00000000029CF268>
+                     tk_focusNext=<function Misc.tk_focusNext at 0x00000000029CF2F0>
+                     tk_focusPrev=<function Misc.tk_focusPrev at 0x00000000029CF378>
+                     tk_menuBar=<function Misc.tk_menuBar at 0x00000000029CCB70>
+                     tk_setPalette=<function Misc.tk_setPalette at 0x00000000029CCAE8>
+                     tk_strictMotif=<function Misc.tk_strictMotif at 0x00000000029CC9D8>
+                     tkraise=<function Misc.tkraise at 0x00000000029D00D0>
+                     unbind=<function Misc.unbind at 0x00000000029D20D0>
+                     unbind_all=<function Misc.unbind_all at 0x00000000029D21E0>
+                     unbind_class=<function Misc.unbind_class at 0x00000000029D22F0>
+                     update=<function Misc.update at 0x00000000029D1D90>
+                     update_idletasks=<function Misc.update_idletasks at 0x00000000029D1E18>
+                     wait_variable=<function Misc.wait_variable at 0x00000000029CCBF8>
+                     wait_visibility=<function Misc.wait_visibility at 0x00000000029CCD08>
+                     wait_window=<function Misc.wait_window at 0x00000000029CCC80>
+                     waitvar=<function Misc.wait_variable at 0x00000000029CCBF8>
+                     winfo_atom=<function Misc.winfo_atom at 0x00000000029D01E0>
+                     winfo_atomname=<function Misc.winfo_atomname at 0x00000000029D0268>
+                     winfo_cells=<function Misc.winfo_cells at 0x00000000029D02F0>
+                     winfo_children=<function Misc.winfo_children at 0x00000000029D0378>
+                     winfo_class=<function Misc.winfo_class at 0x00000000029D0400>
+                     winfo_colormapfull=<function Misc.winfo_colormapfull at 0x00000000029D0488>
+                     winfo_containing=<function Misc.winfo_containing at 0x00000000029D0510>
+                     winfo_depth=<function Misc.winfo_depth at 0x00000000029D0598>
+                     winfo_exists=<function Misc.winfo_exists at 0x00000000029D0620>
+                     winfo_fpixels=<function Misc.winfo_fpixels at 0x00000000029D06A8>
+                     winfo_geometry=<function Misc.winfo_geometry at 0x00000000029D0730>
+                     winfo_height=<function Misc.winfo_height at 0x00000000029D07B8>
+                     winfo_id=<function Misc.winfo_id at 0x00000000029D0840>
+                     winfo_interps=<function Misc.winfo_interps at 0x00000000029D08C8>
+                     winfo_ismapped=<function Misc.winfo_ismapped at 0x00000000029D0950>
+                     winfo_manager=<function Misc.winfo_manager at 0x00000000029D09D8>
+                     winfo_name=<function Misc.winfo_name at 0x00000000029D0A60>
+                     winfo_parent=<function Misc.winfo_parent at 0x00000000029D0AE8>
+                     winfo_pathname=<function Misc.winfo_pathname at 0x00000000029D0B70>
+                     winfo_pixels=<function Misc.winfo_pixels at 0x00000000029D0BF8>
+                     winfo_pointerx=<function Misc.winfo_pointerx at 0x00000000029D0C80>
+                     winfo_pointerxy=<function Misc.winfo_pointerxy at 0x00000000029D0D08>
+                     winfo_pointery=<function Misc.winfo_pointery at 0x00000000029D0D90>
+                     winfo_reqheight=<function Misc.winfo_reqheight at 0x00000000029D0E18>
+                     winfo_reqwidth=<function Misc.winfo_reqwidth at 0x00000000029D0EA0>
+                     winfo_rgb=<function Misc.winfo_rgb at 0x00000000029D0F28>
+                     winfo_rootx=<function Misc.winfo_rootx at 0x00000000029D1048>
+                     winfo_rooty=<function Misc.winfo_rooty at 0x00000000029D10D0>
+                     winfo_screen=<function Misc.winfo_screen at 0x00000000029D1158>
+                     winfo_screencells=<function Misc.winfo_screencells at 0x00000000029D11E0>
+                     winfo_screendepth=<function Misc.winfo_screendepth at 0x00000000029D1268>
+                     winfo_screenheight=<function Misc.winfo_screenheight at 0x00000000029D12F0>
+                     winfo_screenmmheight=<function Misc.winfo_screenmmheight at 0x00000000029D1378>
+                     winfo_screenmmwidth=<function Misc.winfo_screenmmwidth at 0x00000000029D1400>
+                     winfo_screenvisual=<function Misc.winfo_screenvisual at 0x00000000029D1488>
+                     winfo_screenwidth=<function Misc.winfo_screenwidth at 0x00000000029D1510>
+                     winfo_server=<function Misc.winfo_server at 0x00000000029D1598>
+                     winfo_toplevel=<function Misc.winfo_toplevel at 0x00000000029D1620>
+                     winfo_viewable=<function Misc.winfo_viewable at 0x00000000029D16A8>
+                     winfo_visual=<function Misc.winfo_visual at 0x00000000029D1730>
+                     winfo_visualid=<function Misc.winfo_visualid at 0x00000000029D17B8>
+                     winfo_visualsavailable=<function Misc.winfo_visualsavailable at 0x00000000029D1840>
+                     winfo_vrootheight=<function Misc.winfo_vrootheight at 0x00000000029D19D8>
+                     winfo_vrootwidth=<function Misc.winfo_vrootwidth at 0x00000000029D1A60>
+                     winfo_vrootx=<function Misc.winfo_vrootx at 0x00000000029D1AE8>
+                     winfo_vrooty=<function Misc.winfo_vrooty at 0x00000000029D1B70>
+                     winfo_width=<function Misc.winfo_width at 0x00000000029D1BF8>
+                     winfo_x=<function Misc.winfo_x at 0x00000000029D1C80>
+                     winfo_y=<function Misc.winfo_y at 0x00000000029D1D08>
+
+........................<Class object:, address 506770624: (see above)>
+....................>
+................>
+
+................<Class Pack, address 44784248:
+                 __dict__
+                 __doc__
+                 __module__
+                 __qualname__
+                 __weakref__
+                 config=<function Pack.pack_configure at 0x00000000029D61E0>
+                 configure=<function Pack.pack_configure at 0x00000000029D61E0>
+                 forget=<function Pack.pack_forget at 0x00000000029D6268>
+                 info=<function Pack.pack_info at 0x00000000029D62F0>
+                 pack=<function Pack.pack_configure at 0x00000000029D61E0>
+                 pack_configure=<function Pack.pack_configure at 0x00000000029D61E0>
+                 pack_forget=<function Pack.pack_forget at 0x00000000029D6268>
+                 pack_info=<function Pack.pack_info at 0x00000000029D62F0>
+                 pack_propagate=<function Misc.pack_propagate at 0x00000000029D2D90>
+                 pack_slaves=<function Misc.pack_slaves at 0x00000000029D2E18>
+                 propagate=<function Misc.pack_propagate at 0x00000000029D2D90>
+                 slaves=<function Misc.pack_slaves at 0x00000000029D2E18>
+
+....................<Class object:, address 506770624: (see above)>
+................>
+
+................<Class Place, address 44785160:
+                 __dict__
+                 __doc__
+                 __module__
+                 __qualname__
+                 __weakref__
+                 config=<function Place.place_configure at 0x00000000029D6378>
+                 configure=<function Place.place_configure at 0x00000000029D6378>
+                 forget=<function Place.place_forget at 0x00000000029D6400>
+                 info=<function Place.place_info at 0x00000000029D6488>
+                 place=<function Place.place_configure at 0x00000000029D6378>
+                 place_configure=<function Place.place_configure at 0x00000000029D6378>
+                 place_forget=<function Place.place_forget at 0x00000000029D6400>
+                 place_info=<function Place.place_info at 0x00000000029D6488>
+                 place_slaves=<function Misc.place_slaves at 0x00000000029D2EA0>
+                 slaves=<function Misc.place_slaves at 0x00000000029D2EA0>
+
+....................<Class object:, address 506770624: (see above)>
+................>
+
+................<Class Grid, address 44786072:
+                 __dict__
+                 __doc__
+                 __module__
+                 __qualname__
+                 __weakref__
+                 bbox=<function Misc.grid_bbox at 0x00000000029D3048>
+                 columnconfigure=<function Misc.grid_columnconfigure at 0x00000000029D3158>
+                 config=<function Grid.grid_configure at 0x00000000029D6510>
+                 configure=<function Grid.grid_configure at 0x00000000029D6510>
+                 forget=<function Grid.grid_forget at 0x00000000029D6598>
+                 grid=<function Grid.grid_configure at 0x00000000029D6510>
+                 grid_bbox=<function Misc.grid_bbox at 0x00000000029D3048>
+                 grid_columnconfigure=<function Misc.grid_columnconfigure at 0x00000000029D3158>
+                 grid_configure=<function Grid.grid_configure at 0x00000000029D6510>
+                 grid_forget=<function Grid.grid_forget at 0x00000000029D6598>
+                 grid_info=<function Grid.grid_info at 0x00000000029D66A8>
+                 grid_location=<function Misc.grid_location at 0x00000000029D31E0>
+                 grid_propagate=<function Misc.grid_propagate at 0x00000000029D3268>
+                 grid_remove=<function Grid.grid_remove at 0x00000000029D6620>
+                 grid_rowconfigure=<function Misc.grid_rowconfigure at 0x00000000029D32F0>
+                 grid_size=<function Misc.grid_size at 0x00000000029D3378>
+                 grid_slaves=<function Misc.grid_slaves at 0x00000000029D3400>
+                 info=<function Grid.grid_info at 0x00000000029D66A8>
+                 location=<function Misc.grid_location at 0x00000000029D31E0>
+                 propagate=<function Misc.grid_propagate at 0x00000000029D3268>
+                 rowconfigure=<function Misc.grid_rowconfigure at 0x00000000029D32F0>
+                 size=<function Misc.grid_size at 0x00000000029D3378>
+                 slaves=<function Misc.grid_slaves at 0x00000000029D3400>
+
+....................<Class object:, address 506770624: (see above)>
+................>
+............>
+........>
+....>
+>

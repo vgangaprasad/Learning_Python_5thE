@@ -1,0 +1,48 @@
+# all using abs()
+
+c:\code>py -3 timeseqs.py
+3.3.0 (v3.3.0:bd8afb90ebf2, Sep 29 2012, 10:57:17) [MSC v.1600 64 bit (AMD64)]
+forLoop  : 1.27880 => [0...9999]
+listComp : 0.70435 => [0...9999]
+mapCall  : 0.55856 => [0...9999]
+genExpr  : 1.09031 => [0...9999]
+genFunc  : 1.08384 => [0...9999]
+
+c:\code>py -2 timeseqs.py
+2.7.3 (default, Apr 10 2012, 23:24:47) [MSC v.1500 64 bit (AMD64)]
+forLoop  : 1.23458 => [0...9999]
+listComp : 0.65007 => [0...9999]
+mapCall  : 0.60083 => [0...9999]
+genExpr  : 0.89129 => [0...9999]
+genFunc  : 0.88493 => [0...9999]
+
+c:\code>c:\PyPy\pypy-1.9\pypy.exe timeseqs.py
+2.7.2 (341e1e3821ff, Jun 07 2012, 15:43:00)
+[PyPy 1.9.0 with MSC v.1500 32 bit]
+forLoop  : 0.11305 => [0...9999]
+listComp : 0.05677 => [0...9999]
+mapCall  : 0.11151 => [0...9999]
+genExpr  : 0.18550 => [0...9999]
+genFunc  : 0.17161 => [0...9999]
+
+
+# all doing x + 10 (map requires lambda)
+
+c:\code>py -3 timeseqs2.py
+3.3.0 (v3.3.0:bd8afb90ebf2, Sep 29 2012, 10:57:17) [MSC v.1600 64 bit (AMD64)]
+forLoop  : 1.33106 => [10...10009]
+listComp : 0.72086 => [10...10009]
+mapCall  : 1.66331 => [10...10009]
+genExpr  : 1.08869 => [10...10009]
+genFunc  : 1.09644 => [10...10009]
+
+
+# all using user-defined f()
+
+c:\code>py -3 timeseqs2B.py
+3.3.0 (v3.3.0:bd8afb90ebf2, Sep 29 2012, 10:57:17) [MSC v.1600 64 bit (AMD64)]
+forLoop  : 1.88374 => [0...9999]
+listComp : 1.44383 => [0...9999]
+mapCall  : 1.19976 => [0...9999]
+genExpr  : 1.55637 => [0...9999]
+genFunc  : 1.56062 => [0...9999]
