@@ -1,0 +1,116 @@
+-----------------------------------------------------------------------------------------
+
+
+from . import m1  # <==OK in package, not allowed in non-package mode in 2.X + 3.X
+
+
+
+c:\code>py -3
+Python 3.3.0 (v3.3.0:bd8afb90ebf2, Sep 29 2012, 10:57:17) [MSC v.1600 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import dualpkg.m2
+>>> dualpkg.m2.somefunc()
+m1.somefunc
+m2.somefunc
+
+
+c:\code>py -2
+Python 2.7.3 (default, Apr 10 2012, 23:24:47) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import dualpkg.m2
+>>> dualpkg.m2.somefunc()
+m1.somefunc
+m2.somefunc
+
+
+c:\code>py -3 dualpkg\m2.py
+Traceback (most recent call last):
+  File "dualpkg\m2.py", line 3, in <module>
+    from . import m1  # <==OK in package, not allowed in non-package mode in 2.X + 3
+.X
+SystemError: Parent module '' not loaded, cannot perform relative import
+
+
+c:\code>py -2 dualpkg\m2.py
+Traceback (most recent call last):
+  File "dualpkg\m2.py", line 3, in <module>
+    from . import m1  # <==OK in package, not allowed in non-package mode in 2.X + 3
+.X
+ValueError: Attempted relative import in non-package
+
+
+
+
+------------------------------------------------------------------------------------
+
+
+import m1        # <==OK in program, fails to check package's own dir in 3.X
+
+
+
+c:\code>py -3 dualpkg\m2.py
+m1.somefunc
+m2.somefunc
+
+
+c:\code>py -2 dualpkg\m2.py
+m1.somefunc
+m2.somefunc
+
+
+c:\code>py -3
+Python 3.3.0 (v3.3.0:bd8afb90ebf2, Sep 29 2012, 10:57:17) [MSC v.1600 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import dualpkg.m2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File ".\dualpkg\m2.py", line 4, in <module>
+    import m1        # <==OK in program, fails to check package's own dir in 3.X
+ImportError: No module named 'm1'
+
+
+c:\code>py -2
+Python 2.7.3 (default, Apr 10 2012, 23:24:47) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import dualpkg.m2
+>>> dualpkg.m2.somefunc()
+m1.somefunc
+m2.somefunc
+
+
+
+
+-------------------------------------------------------------------------------------
+
+
+# set PYTHONPATH=c:\code
+import dualpkg.m1 as m1     # <==works in both modes if sys.path includes pks root
+
+
+
+c:\code>py -3 dualpkg\m2.py
+m1.somefunc
+m2.somefunc
+
+
+c:\code>py -2 dualpkg\m2.py
+m1.somefunc
+m2.somefunc
+
+
+c:\code>py -3
+Python 3.3.0 (v3.3.0:bd8afb90ebf2, Sep 29 2012, 10:57:17) [MSC v.1600 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import dualpkg.m2
+>>> dualpkg.m2.somefunc()
+m1.somefunc
+m2.somefunc
+
+
+c:\code>py -2
+Python 2.7.3 (default, Apr 10 2012, 23:24:47) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import dualpkg.m2
+>>> dualpkg.m2.somefunc()
+m1.somefunc
+m2.somefunc
