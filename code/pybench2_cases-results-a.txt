@@ -1,0 +1,65 @@
+3.3.0 (v3.3.0:bd8afb90ebf2, Sep 29 2012, 10:57:17) [MSC v.1600 64 bit (AMD64)]
+--------------------------------------------------------------------------------
+['[x ** 2 for x in range(1000)]']
+C:\python33\python
+	1000 loops, best of 5: 493 usec per loop
+C:\python27\python
+	1000 loops, best of 5: 70.9 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 5.9 usec per loop
+--------------------------------------------------------------------------------
+['res=[]\nfor x in range(1000): res.append(x ** 2)']
+C:\python33\python
+	1000 loops, best of 5: 559 usec per loop
+C:\python27\python
+	1000 loops, best of 5: 128 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 9.92 usec per loop
+--------------------------------------------------------------------------------
+['$listif3(map(lambda x: x ** 2, range(1000)))']
+C:\python33\python
+	1000 loops, best of 5: 595 usec per loop
+C:\python27\python
+	1000 loops, best of 5: 162 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 9.89 usec per loop
+--------------------------------------------------------------------------------
+['list(x ** 2 for x in range(1000))']
+C:\python33\python
+	1000 loops, best of 5: 534 usec per loop
+C:\python27\python
+	1000 loops, best of 5: 93.2 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 16.6 usec per loop
+--------------------------------------------------------------------------------
+["[f(x) for x in 'spam' * 2500]"]
+C:\python33\python
+	1000 loops, best of 5: 1.53 msec per loop
+C:\python27\python
+	1000 loops, best of 5: 1.23 msec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 107 usec per loop
+--------------------------------------------------------------------------------
+["res=[]\nfor x in 'spam' * 2500:\n\tres.append(f(x))"]
+C:\python33\python
+	1000 loops, best of 5: 2.04 msec per loop
+C:\python27\python
+	1000 loops, best of 5: 1.83 msec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 186 usec per loop
+--------------------------------------------------------------------------------
+['for i in range(len(L)): L[i] += 1']
+C:\python33\python
+	1000 loops, best of 5: 1.2 usec per loop
+C:\python27\python
+	1000 loops, best of 5: 0.77 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 0.0479 usec per loop
+--------------------------------------------------------------------------------
+['i=0\nwhile i < len(L):\n\tL[i] += 1\n\ti += 1']
+C:\python33\python
+	1000 loops, best of 5: 1.41 usec per loop
+C:\python27\python
+	1000 loops, best of 5: 1.02 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 0.0376 usec per loop

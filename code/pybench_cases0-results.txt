@@ -1,0 +1,36 @@
+c:\code>py -3 pybench_cases0.py
+3.3.0 (v3.3.0:bd8afb90ebf2, Sep 29 2012, 10:57:17) [MSC v.1600 64 bit (AMD64)]
+0.7237  ["[ord(x) for x in 'spam' * 2500]"]
+1.3471  ["res=[]\nfor x in 'spam' * 2500: res.append(ord(x))"]
+0.6160  ["list(map(ord, 'spam' * 2500))"]
+1.1244  ["list(ord(x) for x in 'spam' * 2500)"]
+0.5446  ['{x ** 2 for x in range(1000)}']
+0.6053  ['s=set()\nfor x in range(1000): s.add(x ** 2)']
+0.5278  ['{x: x ** 2 for x in range(1000)}']
+0.5414  ['d={}\nfor x in range(1000): d[x] = x ** 2']
+1.8933  ['len(str(2**1000000))']
+
+c:\code>py -2 pybench_cases0.py
+2.7.3 (default, Apr 10 2012, 23:24:47) [MSC v.1500 64 bit (AMD64)]
+0.6623  ["[ord(x) for x in 'spam' * 2500]"]
+1.2251  ["res=[]\nfor x in 'spam' * 2500: res.append(ord(x))"]
+0.6082  ["(map(ord, 'spam' * 2500))"]
+0.9026  ["list(ord(x) for x in 'spam' * 2500)"]
+0.0966  ['{x ** 2 for x in range(1000)}']
+0.1600  ['s=set()\nfor x in range(1000): s.add(x ** 2)']
+0.0924  ['{x: x ** 2 for x in range(1000)}']
+0.1037  ['d={}\nfor x in range(1000): d[x] = x ** 2']
+1.8538  ['len(str(2**1000000))']
+
+c:\code>C:\pypy\pypy-1.9\pypy pybench_cases0.py
+2.7.2 (341e1e3821ff, Jun 07 2012, 15:43:00)
+[PyPy 1.9.0 with MSC v.1500 32 bit]
+0.0849  ["[ord(x) for x in 'spam' * 2500]"]
+0.1299  ["res=[]\nfor x in 'spam' * 2500: res.append(ord(x))"]
+0.1291  ["(map(ord, 'spam' * 2500))"]
+0.1877  ["list(ord(x) for x in 'spam' * 2500)"]
+0.0268  ['{x ** 2 for x in range(1000)}']
+0.0257  ['s=set()\nfor x in range(1000): s.add(x ** 2)']
+0.0251  ['{x: x ** 2 for x in range(1000)}']
+0.0238  ['d={}\nfor x in range(1000): d[x] = x ** 2']
+15.5875  ['len(str(2**1000000))']

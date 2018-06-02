@@ -1,0 +1,89 @@
+3.3.0 (v3.3.0:bd8afb90ebf2, Sep 29 2012, 10:57:17) [MSC v.1600 64 bit (AMD64)]
+--------------------------------------------------------------------------------
+['[x ** 2 for x in range(1000)]']
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 -s "" "[x ** 2 for x in range(1000)]"
+	1000 loops, best of 5: 499 usec per loop
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 -s "" "[x ** 2 for x in range(1000)]"
+	1000 loops, best of 5: 71.8 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 -s "" "[x ** 2 for x in range(1000)]"
+	1000 loops, best of 5: 6.02 usec per loop
+--------------------------------------------------------------------------------
+['res=[]\nfor x in range(1000): res.append(x ** 2)']
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 -s "" "res=[]" "for x in range(1000): res.append(x ** 2)"
+	1000 loops, best of 5: 569 usec per loop
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 -s "" "res=[]" "for x in range(1000): res.append(x ** 2)"
+	1000 loops, best of 5: 129 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 -s "" "res=[]" "for x in range(1000): res.append(x ** 2)"
+	1000 loops, best of 5: 9.42 usec per loop
+--------------------------------------------------------------------------------
+['$listif3(map(lambda x: x ** 2, range(1000)))']
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 -s "" "list(map(lambda x: x ** 2, range(1000)))"
+	1000 loops, best of 5: 602 usec per loop
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 -s "" "(map(lambda x: x ** 2, range(1000)))"
+	1000 loops, best of 5: 162 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 -s "" "(map(lambda x: x ** 2, range(1000)))"
+	1000 loops, best of 5: 10.2 usec per loop
+--------------------------------------------------------------------------------
+['list(x ** 2 for x in range(1000))']
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 -s "" "list(x ** 2 for x in range(1000))"
+	1000 loops, best of 5: 540 usec per loop
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 -s "" "list(x ** 2 for x in range(1000))"
+	1000 loops, best of 5: 94.5 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 -s "" "list(x ** 2 for x in range(1000))"
+	1000 loops, best of 5: 16 usec per loop
+--------------------------------------------------------------------------------
+["[f(x) for x in 'spam' * 2500]"]
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 -s "def f(x):" -s "    return x" "[f(x) for x in 'spam' * 2500]"
+	1000 loops, best of 5: 1.55 msec per loop
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 -s "def f(x):" -s "    return x" "[f(x) for x in 'spam' * 2500]"
+	1000 loops, best of 5: 1.23 msec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 -s "def f(x):" -s "    return x" "[f(x) for x in 'spam' * 2500]"
+	1000 loops, best of 5: 107 usec per loop
+--------------------------------------------------------------------------------
+["res=[]\nfor x in 'spam' * 2500:\n\tres.append(f(x))"]
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 -s "def f(x):" -s "    return x" "res=[]" "for x in 'spam' * 2500:" "    res.append(f(x))"
+	1000 loops, best of 5: 2.07 msec per loop
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 -s "def f(x):" -s "    return x" "res=[]" "for x in 'spam' * 2500:" "    res.append(f(x))"
+	1000 loops, best of 5: 1.82 msec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 -s "def f(x):" -s "    return x" "res=[]" "for x in 'spam' * 2500:" "    res.append(f(x))"
+	1000 loops, best of 5: 188 usec per loop
+--------------------------------------------------------------------------------
+['for i in range(len(L)): L[i] += 1']
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 -s "L = [1, 2, 3, 4, 5]" "for i in range(len(L)): L[i] += 1"
+	1000 loops, best of 5: 1.23 usec per loop
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 -s "L = [1, 2, 3, 4, 5]" "for i in range(len(L)): L[i] += 1"
+	1000 loops, best of 5: 0.825 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 -s "L = [1, 2, 3, 4, 5]" "for i in range(len(L)): L[i] += 1"
+	1000 loops, best of 5: 0.0538 usec per loop
+--------------------------------------------------------------------------------
+['i=0\nwhile i < len(L):\n\tL[i] += 1\n\ti += 1']
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 -s "L = [1, 2, 3, 4, 5]" "i=0" "while i < len(L):" "    L[i] += 1" "    i += 1"
+	1000 loops, best of 5: 1.44 usec per loop
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 -s "L = [1, 2, 3, 4, 5]" "i=0" "while i < len(L):" "    L[i] += 1" "    i += 1"
+	1000 loops, best of 5: 1.05 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 -s "L = [1, 2, 3, 4, 5]" "i=0" "while i < len(L):" "    L[i] += 1" "    i += 1"
+	1000 loops, best of 5: 0.0371 usec per loop

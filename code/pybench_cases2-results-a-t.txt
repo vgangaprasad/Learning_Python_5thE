@@ -1,0 +1,426 @@
+3.3.0 (v3.3.0:bd8afb90ebf2, Sep 29 2012, 10:57:17) [MSC v.1600 64 bit (AMD64)]
+--------------------------------------------------------------------------------
+['[x ** 2 for x in range(1000)]']
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "[x ** 2 for x in range(1000)]"
+	1000 loops, best of 5: 70.9 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "[x ** 2 for x in range(1000)]"
+	1000 loops, best of 5: 505 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "[x ** 2 for x in range(1000)]"
+	1000 loops, best of 5: 499 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "[x ** 2 for x in range(1000)]"
+	1000 loops, best of 5: 5.91 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "[x ** 2 for x in range(1000)]"
+	1000 loops, best of 5: 5.6 usec per loop
+--------------------------------------------------------------------------------
+['res=[]\nfor x in range(1000): res.append(x ** 2)']
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "res=[]" "for x in range(1000): res.append(x ** 2)"
+	1000 loops, best of 5: 129 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "res=[]" "for x in range(1000): res.append(x ** 2)"
+	1000 loops, best of 5: 568 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "res=[]" "for x in range(1000): res.append(x ** 2)"
+	1000 loops, best of 5: 562 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "res=[]" "for x in range(1000): res.append(x ** 2)"
+	1000 loops, best of 5: 10.2 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "res=[]" "for x in range(1000): res.append(x ** 2)"
+	1000 loops, best of 5: 9.61 usec per loop
+--------------------------------------------------------------------------------
+['$listif3(map(lambda x: x ** 2, range(1000)))']
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "(map(lambda x: x ** 2, range(1000)))"
+	1000 loops, best of 5: 163 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "list(map(lambda x: x ** 2, range(1000)))"
+	1000 loops, best of 5: 587 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "list(map(lambda x: x ** 2, range(1000)))"
+	1000 loops, best of 5: 599 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "(map(lambda x: x ** 2, range(1000)))"
+	1000 loops, best of 5: 9.9 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "(map(lambda x: x ** 2, range(1000)))"
+	1000 loops, best of 5: 10.7 usec per loop
+--------------------------------------------------------------------------------
+['list(x ** 2 for x in range(1000))']
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "list(x ** 2 for x in range(1000))"
+	1000 loops, best of 5: 94.8 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "list(x ** 2 for x in range(1000))"
+	1000 loops, best of 5: 538 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "list(x ** 2 for x in range(1000))"
+	1000 loops, best of 5: 538 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "list(x ** 2 for x in range(1000))"
+	1000 loops, best of 5: 15.6 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "list(x ** 2 for x in range(1000))"
+	1000 loops, best of 5: 15.7 usec per loop
+--------------------------------------------------------------------------------
+["[ord(x) for x in 'spam' * 2500]"]
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "[ord(x) for x in 'spam' * 2500]"
+	1000 loops, best of 5: 670 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "[ord(x) for x in 'spam' * 2500]"
+	1000 loops, best of 5: 664 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "[ord(x) for x in 'spam' * 2500]"
+	1000 loops, best of 5: 750 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "[ord(x) for x in 'spam' * 2500]"
+	1000 loops, best of 5: 84 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "[ord(x) for x in 'spam' * 2500]"
+	1000 loops, best of 5: 83 usec per loop
+--------------------------------------------------------------------------------
+["res=[]\nfor x in 'spam' * 2500: res.append(ord(x))"]
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "res=[]" "for x in 'spam' * 2500: res.append(ord(x))"
+	1000 loops, best of 5: 1.24 msec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "res=[]" "for x in 'spam' * 2500: res.append(ord(x))"
+	1000 loops, best of 5: 1.46 msec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "res=[]" "for x in 'spam' * 2500: res.append(ord(x))"
+	1000 loops, best of 5: 1.35 msec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "res=[]" "for x in 'spam' * 2500: res.append(ord(x))"
+	1000 loops, best of 5: 126 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "res=[]" "for x in 'spam' * 2500: res.append(ord(x))"
+	1000 loops, best of 5: 132 usec per loop
+--------------------------------------------------------------------------------
+["$listif3(map(ord, 'spam' * 2500))"]
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "(map(ord, 'spam' * 2500))"
+	1000 loops, best of 5: 610 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "list(map(ord, 'spam' * 2500))"
+	1000 loops, best of 5: 544 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "list(map(ord, 'spam' * 2500))"
+	1000 loops, best of 5: 593 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "(map(ord, 'spam' * 2500))"
+	1000 loops, best of 5: 143 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "(map(ord, 'spam' * 2500))"
+	1000 loops, best of 5: 129 usec per loop
+--------------------------------------------------------------------------------
+["list(ord(x) for x in 'spam' * 2500)"]
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "list(ord(x) for x in 'spam' * 2500)"
+	1000 loops, best of 5: 871 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "list(ord(x) for x in 'spam' * 2500)"
+	1000 loops, best of 5: 1.17 msec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "list(ord(x) for x in 'spam' * 2500)"
+	1000 loops, best of 5: 1.09 msec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "list(ord(x) for x in 'spam' * 2500)"
+	1000 loops, best of 5: 184 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "list(ord(x) for x in 'spam' * 2500)"
+	1000 loops, best of 5: 187 usec per loop
+--------------------------------------------------------------------------------
+["def f(x): return x\n[f(x) for x in 'spam' * 2500]"]
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "def f(x): return x" "[f(x) for x in 'spam' * 2500]"
+	1000 loops, best of 5: 1.25 msec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "def f(x): return x" "[f(x) for x in 'spam' * 2500]"
+	1000 loops, best of 5: 1.32 msec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "def f(x): return x" "[f(x) for x in 'spam' * 2500]"
+	1000 loops, best of 5: 1.55 msec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "def f(x): return x" "[f(x) for x in 'spam' * 2500]"
+	1000 loops, best of 5: 110 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "def f(x): return x" "[f(x) for x in 'spam' * 2500]"
+	1000 loops, best of 5: 96.5 usec per loop
+--------------------------------------------------------------------------------
+["def f(x): return x\nres=[]\nfor x in 'spam' * 2500: res.append(f(x))"]
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "def f(x): return x" "res=[]" "for x in 'spam' * 2500: res.append(f(x))"
+	1000 loops, best of 5: 1.87 msec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "def f(x): return x" "res=[]" "for x in 'spam' * 2500: res.append(f(x))"
+	1000 loops, best of 5: 2.13 msec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "def f(x): return x" "res=[]" "for x in 'spam' * 2500: res.append(f(x))"
+	1000 loops, best of 5: 2.06 msec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "def f(x): return x" "res=[]" "for x in 'spam' * 2500: res.append(f(x))"
+	1000 loops, best of 5: 196 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "def f(x): return x" "res=[]" "for x in 'spam' * 2500: res.append(f(x))"
+	1000 loops, best of 5: 186 usec per loop
+--------------------------------------------------------------------------------
+["def f(x): return x\n$listif3(map(f, 'spam' * 2500))"]
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "def f(x): return x" "(map(f, 'spam' * 2500))"
+	1000 loops, best of 5: 1.25 msec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "def f(x): return x" "list(map(f, 'spam' * 2500))"
+	1000 loops, best of 5: 1.23 msec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "def f(x): return x" "list(map(f, 'spam' * 2500))"
+	1000 loops, best of 5: 1.25 msec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "def f(x): return x" "(map(f, 'spam' * 2500))"
+	1000 loops, best of 5: 182 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "def f(x): return x" "(map(f, 'spam' * 2500))"
+	1000 loops, best of 5: 175 usec per loop
+--------------------------------------------------------------------------------
+["def f(x): return x\nlist(f(x) for x in 'spam' * 2500)"]
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "def f(x): return x" "list(f(x) for x in 'spam' * 2500)"
+	1000 loops, best of 5: 1.5 msec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "def f(x): return x" "list(f(x) for x in 'spam' * 2500)"
+	1000 loops, best of 5: 1.85 msec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "def f(x): return x" "list(f(x) for x in 'spam' * 2500)"
+	1000 loops, best of 5: 1.65 msec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "def f(x): return x" "list(f(x) for x in 'spam' * 2500)"
+	1000 loops, best of 5: 250 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "def f(x): return x" "list(f(x) for x in 'spam' * 2500)"
+	1000 loops, best of 5: 248 usec per loop
+--------------------------------------------------------------------------------
+['{x ** 2 for x in range(1000)}']
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "{x ** 2 for x in range(1000)}"
+	1000 loops, best of 5: 98.5 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "{x ** 2 for x in range(1000)}"
+	1000 loops, best of 5: 541 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "{x ** 2 for x in range(1000)}"
+	1000 loops, best of 5: 545 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "{x ** 2 for x in range(1000)}"
+	1000 loops, best of 5: 25.3 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "{x ** 2 for x in range(1000)}"
+	1000 loops, best of 5: 24.9 usec per loop
+--------------------------------------------------------------------------------
+['s=set()\nfor x in range(1000): s.add(x ** 2)']
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "s=set()" "for x in range(1000): s.add(x ** 2)"
+	1000 loops, best of 5: 163 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "s=set()" "for x in range(1000): s.add(x ** 2)"
+	1000 loops, best of 5: 609 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "s=set()" "for x in range(1000): s.add(x ** 2)"
+	1000 loops, best of 5: 605 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "s=set()" "for x in range(1000): s.add(x ** 2)"
+	1000 loops, best of 5: 27.2 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "s=set()" "for x in range(1000): s.add(x ** 2)"
+	1000 loops, best of 5: 25.6 usec per loop
+--------------------------------------------------------------------------------
+['{x: x ** 2 for x in range(1000)}']
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "{x: x ** 2 for x in range(1000)}"
+	1000 loops, best of 5: 91 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "{x: x ** 2 for x in range(1000)}"
+	1000 loops, best of 5: 547 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "{x: x ** 2 for x in range(1000)}"
+	1000 loops, best of 5: 505 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "{x: x ** 2 for x in range(1000)}"
+	1000 loops, best of 5: 23.9 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "{x: x ** 2 for x in range(1000)}"
+	1000 loops, best of 5: 23.1 usec per loop
+--------------------------------------------------------------------------------
+['d={}\nfor x in range(1000): d[x] = x ** 2']
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "d={}" "for x in range(1000): d[x] = x ** 2"
+	1000 loops, best of 5: 103 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "d={}" "for x in range(1000): d[x] = x ** 2"
+	1000 loops, best of 5: 536 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "d={}" "for x in range(1000): d[x] = x ** 2"
+	1000 loops, best of 5: 522 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "d={}" "for x in range(1000): d[x] = x ** 2"
+	1000 loops, best of 5: 24.1 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "d={}" "for x in range(1000): d[x] = x ** 2"
+	1000 loops, best of 5: 23 usec per loop
+--------------------------------------------------------------------------------
+["s = 'spam' * 2500\nx = [s[i] for i in range(10000)]"]
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "s = 'spam' * 2500" "x = [s[i] for i in range(10000)]"
+	1000 loops, best of 5: 588 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "s = 'spam' * 2500" "x = [s[i] for i in range(10000)]"
+	1000 loops, best of 5: 802 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "s = 'spam' * 2500" "x = [s[i] for i in range(10000)]"
+	1000 loops, best of 5: 879 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "s = 'spam' * 2500" "x = [s[i] for i in range(10000)]"
+	1000 loops, best of 5: 118 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "s = 'spam' * 2500" "x = [s[i] for i in range(10000)]"
+	1000 loops, best of 5: 126 usec per loop
+--------------------------------------------------------------------------------
+["s = '?'\nfor i in range(10000): s += '?'"]
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "s = '?'" "for i in range(10000): s += '?'"
+	1000 loops, best of 5: 1.97 msec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "s = '?'" "for i in range(10000): s += '?'"
+	1000 loops, best of 5: 1.9 msec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "s = '?'" "for i in range(10000): s += '?'"
+	1000 loops, best of 5: 2.82 msec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "s = '?'" "for i in range(10000): s += '?'"
+	1000 loops, best of 5: 5.8 msec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "s = '?'" "for i in range(10000): s += '?'"
+	1000 loops, best of 5: 5.82 msec per loop
+--------------------------------------------------------------------------------
+['L = [1, 2, 3, 4, 5]\nfor i in range(len(L)): L[i] += 1']
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "L = [1, 2, 3, 4, 5]" "for i in range(len(L)): L[i] += 1"
+	1000 loops, best of 5: 0.884 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "L = [1, 2, 3, 4, 5]" "for i in range(len(L)): L[i] += 1"
+	1000 loops, best of 5: 1.33 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "L = [1, 2, 3, 4, 5]" "for i in range(len(L)): L[i] += 1"
+	1000 loops, best of 5: 1.33 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "L = [1, 2, 3, 4, 5]" "for i in range(len(L)): L[i] += 1"
+	1000 loops, best of 5: 0.122 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "L = [1, 2, 3, 4, 5]" "for i in range(len(L)): L[i] += 1"
+	1000 loops, best of 5: 0.122 usec per loop
+--------------------------------------------------------------------------------
+['L = [1, 2, 3, 4, 5]\ni=0\nwhile i < len(L):\n\tL[i] += 1\n\ti += 1']
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "L = [1, 2, 3, 4, 5]" "i=0" "while i < len(L):" "    L[i] += 1" "    i += 1"
+	1000 loops, best of 5: 1.15 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "L = [1, 2, 3, 4, 5]" "i=0" "while i < len(L):" "    L[i] += 1" "    i += 1"
+	1000 loops, best of 5: 1.62 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "L = [1, 2, 3, 4, 5]" "i=0" "while i < len(L):" "    L[i] += 1" "    i += 1"
+	1000 loops, best of 5: 1.48 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "L = [1, 2, 3, 4, 5]" "i=0" "while i < len(L):" "    L[i] += 1" "    i += 1"
+	1000 loops, best of 5: 0.121 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "L = [1, 2, 3, 4, 5]" "i=0" "while i < len(L):" "    L[i] += 1" "    i += 1"
+	1000 loops, best of 5: 0.12 usec per loop
+--------------------------------------------------------------------------------
+['L = [1, 2, 3, 4, 5]\nM = [x + 1 for x in L]']
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "L = [1, 2, 3, 4, 5]" "M = [x + 1 for x in L]"
+	1000 loops, best of 5: 0.569 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "L = [1, 2, 3, 4, 5]" "M = [x + 1 for x in L]"
+	1000 loops, best of 5: 0.879 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "L = [1, 2, 3, 4, 5]" "M = [x + 1 for x in L]"
+	1000 loops, best of 5: 0.891 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "L = [1, 2, 3, 4, 5]" "M = [x + 1 for x in L]"
+	1000 loops, best of 5: 0.146 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "L = [1, 2, 3, 4, 5]" "M = [x + 1 for x in L]"
+	1000 loops, best of 5: 0.134 usec per loop
+--------------------------------------------------------------------------------
+["f=open('C:/Python33/Lib/pdb.py')\nfor line in f: x=line\nf.close()"]
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "f=open('C:/Python33/Lib/pdb.py')" "for line in f: x=line" "f.close()"
+	1000 loops, best of 5: 334 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "f=open('C:/Python33/Lib/pdb.py')" "for line in f: x=line" "f.close()"
+	1000 loops, best of 5: 513 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "f=open('C:/Python33/Lib/pdb.py')" "for line in f: x=line" "f.close()"
+	1000 loops, best of 5: 627 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "f=open('C:/Python33/Lib/pdb.py')" "for line in f: x=line" "f.close()"
+	1000 loops, best of 5: 9.19 msec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "f=open('C:/Python33/Lib/pdb.py')" "for line in f: x=line" "f.close()"
+	1000 loops, best of 5: 9.24 msec per loop
+--------------------------------------------------------------------------------
+["f=open('C:/Python33/Lib/pdb.py')\nfor line in f.readlines(): x=line\nf.close()"]
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "f=open('C:/Python33/Lib/pdb.py')" "for line in f.readlines(): x=line" "f.close()"
+	1000 loops, best of 5: 367 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "f=open('C:/Python33/Lib/pdb.py')" "for line in f.readlines(): x=line" "f.close()"
+	1000 loops, best of 5: 565 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "f=open('C:/Python33/Lib/pdb.py')" "for line in f.readlines(): x=line" "f.close()"
+	1000 loops, best of 5: 675 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "f=open('C:/Python33/Lib/pdb.py')" "for line in f.readlines(): x=line" "f.close()"
+	1000 loops, best of 5: 561 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "f=open('C:/Python33/Lib/pdb.py')" "for line in f.readlines(): x=line" "f.close()"
+	1000 loops, best of 5: 547 usec per loop
+--------------------------------------------------------------------------------
+["f = open('C:/Python33/Lib/pdb.py')\nwhile True:\n\tline = f.readline()\n\tif not line: break\n\tx = line\nf.close()"]
+C:\python27\python
+C:\python27\python -m timeit -n 1000 -r 5 "f = open('C:/Python33/Lib/pdb.py')" "while True:" "    line = f.readline()" "    if not line: break" "    x = line" "f.close()"
+	1000 loops, best of 5: 791 usec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1000 -r 5 "f = open('C:/Python33/Lib/pdb.py')" "while True:" "    line = f.readline()" "    if not line: break" "    x = line" "f.close()"
+	1000 loops, best of 5: 746 usec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1000 -r 5 "f = open('C:/Python33/Lib/pdb.py')" "while True:" "    line = f.readline()" "    if not line: break" "    x = line" "f.close()"
+	1000 loops, best of 5: 912 usec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1000 -r 5 "f = open('C:/Python33/Lib/pdb.py')" "while True:" "    line = f.readline()" "    if not line: break" "    x = line" "f.close()"
+	1000 loops, best of 5: 9.16 msec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1000 -r 5 "f = open('C:/Python33/Lib/pdb.py')" "while True:" "    line = f.readline()" "    if not line: break" "    x = line" "f.close()"
+	1000 loops, best of 5: 9.16 msec per loop
+--------------------------------------------------------------------------------
+['len(str(2**1000000))']
+C:\python27\python
+C:\python27\python -m timeit -n 1 -r 1 "len(str(2**1000000))"
+	1 loops, best of 1: 1.86 sec per loop
+C:\python32\python
+C:\python32\python -m timeit -n 1 -r 1 "len(str(2**1000000))"
+	1 loops, best of 1: 1.86 sec per loop
+C:\python33\python
+C:\python33\python -m timeit -n 1 -r 1 "len(str(2**1000000))"
+	1 loops, best of 1: 1.89 sec per loop
+C:\pypy\pypy-1.9\pypy
+C:\pypy\pypy-1.9\pypy -m timeit -n 1 -r 1 "len(str(2**1000000))"
+	1 loops, best of 1: 15.7 sec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+C:\pypy\pypy-2.0-beta1\pypy -m timeit -n 1 -r 1 "len(str(2**1000000))"
+	1 loops, best of 1: 15.4 sec per loop

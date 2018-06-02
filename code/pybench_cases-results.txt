@@ -1,0 +1,80 @@
+c:\code>py -3 pybench_cases.py
+3.3.0 (v3.3.0:bd8afb90ebf2, Sep 29 2012, 10:57:17) [MSC v.1600 64 bit (AMD64)]
+0.5015  ['[x ** 2 for x in range(1000)]']
+0.5655  ['res=[]\nfor x in range(1000): res.append(x ** 2)']
+0.6044  ['list(map(lambda x: x ** 2, range(1000)))']
+0.5425  ['list(x ** 2 for x in range(1000))']
+0.8746  ["s = 'spam' * 2500\nx = [s[i] for i in range(10000)]"]
+2.8060  ["s = '?'\nfor i in range(10000): s += '?'"]
+
+c:\code>py -2 pybench_cases.py
+2.7.3 (default, Apr 10 2012, 23:24:47) [MSC v.1500 64 bit (AMD64)]
+0.0696  ['[x ** 2 for x in range(1000)]']
+0.1285  ['res=[]\nfor x in range(1000): res.append(x ** 2)']
+0.1636  ['(map(lambda x: x ** 2, range(1000)))']
+0.0952  ['list(x ** 2 for x in range(1000))']
+0.6143  ["s = 'spam' * 2500\nx = [s[i] for i in range(10000)]"]
+2.0657  ["s = '?'\nfor i in range(10000): s += '?'"]
+
+c:\code>c:\pypy\pypy-1.9\pypy pybench_cases.py
+2.7.2 (341e1e3821ff, Jun 07 2012, 15:43:00)
+[PyPy 1.9.0 with MSC v.1500 32 bit]
+0.0059  ['[x ** 2 for x in range(1000)]']
+0.0102  ['res=[]\nfor x in range(1000): res.append(x ** 2)']
+0.0099  ['(map(lambda x: x ** 2, range(1000)))']
+0.0156  ['list(x ** 2 for x in range(1000))']
+0.1298  ["s = 'spam' * 2500\nx = [s[i] for i in range(10000)]"]
+5.5242  ["s = '?'\nfor i in range(10000): s += '?'"]
+
+
+
+c:\code>py -3 pybench_cases.py -a
+3.3.0 (v3.3.0:bd8afb90ebf2, Sep 29 2012, 10:57:17) [MSC v.1600 64 bit (AMD64)]
+--------------------------------------------------------------------------------
+['[x ** 2 for x in range(1000)]']
+C:\python33\python
+        1000 loops, best of 5: 499 usec per loop
+C:\python27\python
+        1000 loops, best of 5: 71.4 usec per loop
+C:\pypy\pypy-1.9\pypy
+        1000 loops, best of 5: 5.71 usec per loop
+--------------------------------------------------------------------------------
+['res=[]\nfor x in range(1000): res.append(x ** 2)']
+C:\python33\python
+        1000 loops, best of 5: 562 usec per loop
+C:\python27\python
+        1000 loops, best of 5: 130 usec per loop
+C:\pypy\pypy-1.9\pypy
+        1000 loops, best of 5: 9.81 usec per loop
+--------------------------------------------------------------------------------
+['$listif3(map(lambda x: x ** 2, range(1000)))']
+C:\python33\python
+        1000 loops, best of 5: 599 usec per loop
+C:\python27\python
+        1000 loops, best of 5: 161 usec per loop
+C:\pypy\pypy-1.9\pypy
+        1000 loops, best of 5: 9.45 usec per loop
+--------------------------------------------------------------------------------
+['list(x ** 2 for x in range(1000))']
+C:\python33\python
+        1000 loops, best of 5: 540 usec per loop
+C:\python27\python
+        1000 loops, best of 5: 92.3 usec per loop
+C:\pypy\pypy-1.9\pypy
+        1000 loops, best of 5: 15.1 usec per loop
+--------------------------------------------------------------------------------
+["s = 'spam' * 2500\nx = [s[i] for i in range(10000)]"]
+C:\python33\python
+        1000 loops, best of 5: 873 usec per loop
+C:\python27\python
+        1000 loops, best of 5: 614 usec per loop
+C:\pypy\pypy-1.9\pypy
+        1000 loops, best of 5: 118 usec per loop
+--------------------------------------------------------------------------------
+["s = '?'\nfor i in range(10000): s += '?'"]
+C:\python33\python
+        1000 loops, best of 5: 2.81 msec per loop
+C:\python27\python
+        1000 loops, best of 5: 1.94 msec per loop
+C:\pypy\pypy-1.9\pypy
+        1000 loops, best of 5: 5.68 msec per loop

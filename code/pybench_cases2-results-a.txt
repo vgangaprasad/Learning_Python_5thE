@@ -1,0 +1,301 @@
+3.3.0 (v3.3.0:bd8afb90ebf2, Sep 29 2012, 10:57:17) [MSC v.1600 64 bit (AMD64)]
+--------------------------------------------------------------------------------
+['[x ** 2 for x in range(1000)]']
+C:\python27\python
+	1000 loops, best of 5: 70.5 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 504 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 502 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 5.98 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 5.45 usec per loop
+--------------------------------------------------------------------------------
+['res=[]\nfor x in range(1000): res.append(x ** 2)']
+C:\python27\python
+	1000 loops, best of 5: 130 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 569 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 566 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 9.82 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 9.81 usec per loop
+--------------------------------------------------------------------------------
+['$listif3(map(lambda x: x ** 2, range(1000)))']
+C:\python27\python
+	1000 loops, best of 5: 165 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 597 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 600 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 10.4 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 9.95 usec per loop
+--------------------------------------------------------------------------------
+['list(x ** 2 for x in range(1000))']
+C:\python27\python
+	1000 loops, best of 5: 94.4 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 542 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 547 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 16.5 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 15.6 usec per loop
+--------------------------------------------------------------------------------
+["[ord(x) for x in 'spam' * 2500]"]
+C:\python27\python
+	1000 loops, best of 5: 675 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 660 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 729 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 85.9 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 80.7 usec per loop
+--------------------------------------------------------------------------------
+["res=[]\nfor x in 'spam' * 2500: res.append(ord(x))"]
+C:\python27\python
+	1000 loops, best of 5: 1.24 msec per loop
+C:\python32\python
+	1000 loops, best of 5: 1.46 msec per loop
+C:\python33\python
+	1000 loops, best of 5: 1.36 msec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 130 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 129 usec per loop
+--------------------------------------------------------------------------------
+["$listif3(map(ord, 'spam' * 2500))"]
+C:\python27\python
+	1000 loops, best of 5: 614 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 544 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 620 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 138 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 131 usec per loop
+--------------------------------------------------------------------------------
+["list(ord(x) for x in 'spam' * 2500)"]
+C:\python27\python
+	1000 loops, best of 5: 916 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 1.22 msec per loop
+C:\python33\python
+	1000 loops, best of 5: 1.13 msec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 181 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 168 usec per loop
+--------------------------------------------------------------------------------
+["def f(x): return x\n[f(x) for x in 'spam' * 2500]"]
+C:\python27\python
+	1000 loops, best of 5: 1.25 msec per loop
+C:\python32\python
+	1000 loops, best of 5: 1.32 msec per loop
+C:\python33\python
+	1000 loops, best of 5: 1.55 msec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 92.8 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 101 usec per loop
+--------------------------------------------------------------------------------
+["def f(x): return x\nres=[]\nfor x in 'spam' * 2500: res.append(f(x))"]
+C:\python27\python
+	1000 loops, best of 5: 1.83 msec per loop
+C:\python32\python
+	1000 loops, best of 5: 2.1 msec per loop
+C:\python33\python
+	1000 loops, best of 5: 1.98 msec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 181 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 170 usec per loop
+--------------------------------------------------------------------------------
+["def f(x): return x\n$listif3(map(f, 'spam' * 2500))"]
+C:\python27\python
+	1000 loops, best of 5: 1.19 msec per loop
+C:\python32\python
+	1000 loops, best of 5: 1.17 msec per loop
+C:\python33\python
+	1000 loops, best of 5: 1.19 msec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 188 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 174 usec per loop
+--------------------------------------------------------------------------------
+["def f(x): return x\nlist(f(x) for x in 'spam' * 2500)"]
+C:\python27\python
+	1000 loops, best of 5: 1.47 msec per loop
+C:\python32\python
+	1000 loops, best of 5: 1.86 msec per loop
+C:\python33\python
+	1000 loops, best of 5: 1.66 msec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 259 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 249 usec per loop
+--------------------------------------------------------------------------------
+['{x ** 2 for x in range(1000)}']
+C:\python27\python
+	1000 loops, best of 5: 98.6 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 545 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 540 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 26.9 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 25.5 usec per loop
+--------------------------------------------------------------------------------
+['s=set()\nfor x in range(1000): s.add(x ** 2)']
+C:\python27\python
+	1000 loops, best of 5: 163 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 609 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 613 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 26.1 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 25.5 usec per loop
+--------------------------------------------------------------------------------
+['{x: x ** 2 for x in range(1000)}']
+C:\python27\python
+	1000 loops, best of 5: 93.3 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 550 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 533 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 25.4 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 24.9 usec per loop
+--------------------------------------------------------------------------------
+['d={}\nfor x in range(1000): d[x] = x ** 2']
+C:\python27\python
+	1000 loops, best of 5: 104 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 558 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 551 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 26.4 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 25 usec per loop
+--------------------------------------------------------------------------------
+["s = 'spam' * 2500\nx = [s[i] for i in range(10000)]"]
+C:\python27\python
+	1000 loops, best of 5: 628 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 797 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 873 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 120 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 121 usec per loop
+--------------------------------------------------------------------------------
+["s = '?'\nfor i in range(10000): s += '?'"]
+C:\python27\python
+	1000 loops, best of 5: 1.95 msec per loop
+C:\python32\python
+	1000 loops, best of 5: 1.89 msec per loop
+C:\python33\python
+	1000 loops, best of 5: 2.85 msec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 5.73 msec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 5.67 msec per loop
+--------------------------------------------------------------------------------
+['L = [1, 2, 3, 4, 5]\nfor i in range(len(L)): L[i] += 1']
+C:\python27\python
+	1000 loops, best of 5: 0.881 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 1.29 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 1.34 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 0.12 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 0.121 usec per loop
+--------------------------------------------------------------------------------
+['L = [1, 2, 3, 4, 5]\ni=0\nwhile i < len(L):\n\tL[i] += 1\n\ti += 1']
+C:\python27\python
+	1000 loops, best of 5: 1.16 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 1.58 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 1.56 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 0.113 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 0.118 usec per loop
+--------------------------------------------------------------------------------
+['L = [1, 2, 3, 4, 5]\nM = [x + 1 for x in L]']
+C:\python27\python
+	1000 loops, best of 5: 0.532 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 0.857 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 0.926 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 0.144 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 0.137 usec per loop
+--------------------------------------------------------------------------------
+["f=open('C:/Python33/Lib/pdb.py')\nfor line in f: x=line\nf.close()"]
+C:\python27\python
+	1000 loops, best of 5: 333 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 512 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 629 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 9.08 msec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 9.26 msec per loop
+--------------------------------------------------------------------------------
+["f=open('C:/Python33/Lib/pdb.py')\nfor line in f.readlines(): x=line\nf.close()"]
+C:\python27\python
+	1000 loops, best of 5: 367 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 562 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 670 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 571 usec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 555 usec per loop
+--------------------------------------------------------------------------------
+["f = open('C:/Python33/Lib/pdb.py')\nwhile True:\n\tline = f.readline()\n\tif not line: break\n\tx = line\nf.close()"]
+C:\python27\python
+	1000 loops, best of 5: 821 usec per loop
+C:\python32\python
+	1000 loops, best of 5: 785 usec per loop
+C:\python33\python
+	1000 loops, best of 5: 951 usec per loop
+C:\pypy\pypy-1.9\pypy
+	1000 loops, best of 5: 8.84 msec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1000 loops, best of 5: 9.22 msec per loop
+--------------------------------------------------------------------------------
+['len(str(2**1000000))']
+C:\python27\python
+	1 loops, best of 1: 1.87 sec per loop
+C:\python32\python
+	1 loops, best of 1: 1.88 sec per loop
+C:\python33\python
+	1 loops, best of 1: 1.91 sec per loop
+C:\pypy\pypy-1.9\pypy
+	1 loops, best of 1: 15.7 sec per loop
+C:\pypy\pypy-2.0-beta1\pypy
+	1 loops, best of 1: 15.2 sec per loop
