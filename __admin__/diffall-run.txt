@@ -1,0 +1,93 @@
+D:\Books\5E\LP5E\Release\LP5E-example-code>
+    lp5e-code-1.0-jun1813\__admin__\diffall.py 
+        lp5e-code-1.0-feb2813 lp5e-code-1.0-jun1813
+--------------------
+Comparing lp5e-code-1.0-feb2813 to lp5e-code-1.0-jun1813
+Directory lists are identical
+Comparing contents
+README.txt DIFFERS
+--------------------
+Comparing lp5e-code-1.0-feb2813\__admin__ to lp5e-code-1.0-jun1813\__admin__
+Files unique to lp5e-code-1.0-jun1813\__admin__
+... diffall-run-full.txt
+Comparing contents
+cleanpyc-run.txt DIFFERS
+cleanpyc.py DIFFERS
+diffall-run.txt DIFFERS
+diffall.py matches
+dirdiff.py matches
+visitor.py matches
+visitor_sloc-run.txt DIFFERS
+visitor_sloc.py matches
+--------------------
+...
+Comparing lp5e-code-1.0-feb2813\code to lp5e-code-1.0-jun1813\code
+Files unique to lp5e-code-1.0-feb2813\code
+... final-exercise-code.txt
+Files unique to lp5e-code-1.0-jun1813\code
+... primes.py
+... countdown.py
+... factorials.py
+... reversals.py
+... exercise-II-1.txt
+... maker.py
+... reader.py
+... exercise-III-4.txt
+... adders.py
+... dicts.py
+... exercise-IV-7.txt
+... mymod2.py
+... collector.py
+... exercise-final-selfstudy-code.txt
+Comparing contents
+a.py matches
+access-desc-test.py matches
+access-test.py matches
+access.py matches
+access1.py matches
+access2.py matches
+...
+========================================
+Diffs found: 14
+- files differ at lp5e-code-1.0-feb2813\README.txt - lp5e-code-1.0-jun1813\README.txt
+- unique files at lp5e-code-1.0-feb2813\__admin__ - lp5e-code-1.0-jun1813\__admin__
+- files differ at lp5e-code-1.0-feb2813\__admin__\cleanpyc-run.txt - lp5e-code-1.0-jun1813\__admin__\cleanpyc-run.txt
+- files differ at lp5e-code-1.0-feb2813\__admin__\cleanpyc.py - lp5e-code-1.0-jun1813\__admin__\cleanpyc.py
+- files differ at lp5e-code-1.0-feb2813\__admin__\diffall-run.txt - lp5e-code-1.0-jun1813\__admin__\diffall-run.txt
+- files differ at lp5e-code-1.0-feb2813\__admin__\visitor_sloc-run.txt - lp5e-code-1.0-jun1813\__admin__\visitor_sloc-run.txt
+- unique files at lp5e-code-1.0-feb2813\__admin__\__pycache__ - lp5e-code-1.0-jun1813\__admin__\__pycache__
+- unique files at lp5e-code-1.0-feb2813\code - lp5e-code-1.0-jun1813\code
+- files differ at lp5e-code-1.0-feb2813\code\calltracer-descr.py - lp5e-code-1.0-jun1813\code\calltracer-descr.py
+- files differ at lp5e-code-1.0-feb2813\code\lp5e-large.jpg - lp5e-code-1.0-jun1813\code\lp5e-large.jpg
+- files differ at lp5e-code-1.0-feb2813\code\lp5e-small.gif - lp5e-code-1.0-jun1813\code\lp5e-small.gif
+- files differ at lp5e-code-1.0-feb2813\code\mod.py - lp5e-code-1.0-jun1813\code\mod.py
+- files differ at lp5e-code-1.0-feb2813\code\mymod.py - lp5e-code-1.0-jun1813\code\mymod.py
+- unique files at lp5e-code-1.0-feb2813\code\__pycache__ - lp5e-code-1.0-jun1813\code\__pycache__
+
+
+
+
+
+----prior run------------------------------------------------------------------------------------
+
+c:\temp\LP5E-final-submit>
+    lp5e-code-1.0-feb2813\__admin__\dirdiff.py 
+        lp5e-code-1.0-jan3013\code 
+        lp5e-code-1.0-feb2813\code 
+        > lp5e-code-1.0-feb2813\__admin__\diffall-run.txt
+...
+Comparing lp5e-code-1.0-jan3013\code to lp5e-code-1.0-feb2813\code
+Files unique to lp5e-code-1.0-jan3013\code
+... temp1
+Files unique to lp5e-code-1.0-feb2813\code
+... access-desc-test.py
+... access2_builtins4.py
+... access_builtins_desc.py
+... access_desc.py
+... calltracer-descr.py
+... divbad.py
+... lp5e-large.jpg
+... lp5e-small.gif
+... script.py
+... showargs.py
+... what.py

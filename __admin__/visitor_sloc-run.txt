@@ -1,0 +1,373 @@
+D:\Books\5E\LP5E\Release\LP5E-example-code\lp5e-code-1.0-jun1813>
+    __admin__\visitor_sloc.py code > __admin__\visitor_sloc-run.txt
+
+code ...
+a.py
+access-desc-test.py
+access-test.py
+access.py
+access1.py
+access2.py
+access2_builtins0.py
+access2_builtins1.py
+access2_builtins2.py
+access2_builtins2b.py
+access2_builtins3.py
+access2_builtins3b.py
+access2_builtins4.py
+access2_inserts.py
+access_builtins.py
+access_builtins_desc.py
+access_desc.py
+adder.py
+adder2.py
+alls.py
+argtest.py
+argtest_testmeth.py
+asserter.py
+attrs1.py
+b.py
+bad.py
+badly.py
+bothmethods.py
+bothmethods_decorators.py
+c.py
+callables.py
+calltracer-descr.py
+calltracer.py
+Certificate.html
+certificate.py
+changer.py
+classexc.py
+classexc2.py
+classscope.py
+classtools.py
+classtree.py
+commuter.py
+contains.py
+contains_yield.py
+converters.py
+decoall-deco-any.py
+decoall-deco-any2.py
+decoall-deco-any3.py
+decoall-manual.py
+decoall-meta-any.py
+decoall-meta-any2.py
+decoall-meta-any3.py
+decoall-meta.py
+decoargs-vs-annotations.py
+decorator1.py
+decorator2.py
+decorator3.py
+decorator4.py
+decorator5.py
+decotools.py
+desc-computed.py
+desc-person-nested.py
+desc-person.py
+desc-powers.py
+desc-state-desc.py
+desc-state-inst.py
+dicttable.py
+divbad.py
+docstr.py
+docstrings.py
+domparse.py
+employees.py
+etreeparse.py
+except-finally.py
+excparse.py
+excs.py
+exctools.py
+exctools_deco.py
+exiter.py
+exiter2.py
+extend-deco.py
+extend-manual.py
+extend-meta.py
+factory.py
+formats.py
+formats_currency.py
+formats_currency2.py
+ftpfile.py
+future.py
+getattr-builtins.py
+getattr-computed.py
+getattr-delegate.py
+getattr-person.py
+getattr-powers.py
+getattr-v-getattr.py
+getattr1.py
+getattr2.py
+getattribute-computed.py
+getattribute-person.py
+getattribute-powers.py
+getattribute-powers2.py
+getattribute1.py
+gui1.py
+index.html
+inter2.py
+interact.py
+interfacetracer.py
+kaboom.py
+lambdas1.py
+lister.py
+listinherited-reprloop.py
+listinherited.py
+listinherited2.py
+listinstance-exercise.py
+listinstance.py
+listinstance2.py
+listtree.py
+listtree2.py
+lunch.py
+main.py
+makedb.py
+makeopen.py
+makeopen_class.py
+manage-inst-deco.py
+manage-inst-meta.py
+manynames.py
+mapattrs-lister.py
+mapattrs-slots.py
+mapattrs.py
+mapattrs_getattr.py
+mapattrs_noslots.py
+mergedexc.py
+metaclass1-2x-nosuper.py
+metaclass1-2x.py
+metaclass1.py
+metaclass2.py
+metaclass3.py
+metaclass4-super.py
+metaclass4.py
+metaclass5-hmm.py
+metaclass5.py
+metaclass5b.py
+metainstance.py
+minmax.py
+minmax2.py
+mins.py
+mod.py
+mod1.py
+mod2.py
+mod3.py
+moda.py
+modb.py
+module1.py
+module2.py
+multiset.py
+myclient.py
+mydir.py
+myfile.py
+mylist.py
+mymap.py
+mymod.py
+mypydoc.py
+mysub.py
+nested1.py
+nested2.py
+nested3.py
+nestexc.py
+number.py
+oops.py
+oops2.py
+otherfile.py
+parrot.py
+patternparse.py
+permute.py
+person-composite.py
+person-department.py
+person.py
+pizzashop.py
+print3.py
+print3_alt1.py
+print3_alt2.py
+printnest.py
+private0.py
+prop-computed.py
+prop-desc-equiv.py
+prop-person-deco.py
+prop-person.py
+prop-powers.py
+pseudoprivate.py
+pybench.py
+pybench2.py
+pybench2_cases.py
+pybench_cases.py
+pybench_cases0.py
+pybench_cases2.py
+pydoc-py33.py
+rangetest.py
+rangetest1.py
+rangetest1_test.py
+rangetest_test.py
+recur1.py
+recur2.py
+registry-deco.py
+reloadall.py
+reloadall2.py
+reloadall3.py
+robin2.py
+robin3.py
+runme.py
+saxparse.py
+scramble.py
+script.py
+script0.py
+script1.py
+script2.py
+setcolor.py
+setsubclass.py
+setwrapper.py
+showargs.py
+simple.py
+singletons.py
+skipper.py
+skipper_2x.py
+skipper_yield.py
+slots-test.py
+small.py
+spam_class.py
+spam_class2.py
+spam_static.py
+spam_static_deco.py
+specialize.py
+squares.py
+squares_manual.py
+squares_nonyield.py
+squares_yield.py
+streams.py
+sumtree.py
+sumtree2.py
+temp.py
+testmixin.py
+testmixin0.py
+testprint3.py
+testseqs.py
+text.py
+threenames.py
+timer.py
+timer0.py
+timer2.py
+timer3.py
+timerdeco-test.py
+timerdeco.py
+timerdeco1.py
+timerdeco2.py
+timeseqs.py
+timeseqs2.py
+timeseqs2B.py
+timeseqs3.py
+timeseqs_timer2.py
+timeseqs_timer3.py
+timesqrt.py
+trace.py
+trace_ns.py
+tracer0.py
+tracer1.py
+tracer2.py
+typesubclass.py
+unders.py
+uppdatedb.py
+upper.py
+validate_descriptors1.py
+validate_descriptors2.py
+validate_getattr.py
+validate_getattribute.py
+validate_properties.py
+validate_tester.py
+validate_tester2.py
+what.py
+withas.py
+zoo.py
+primes.py
+countdown.py
+factorials.py
+reversals.py
+maker.py
+reader.py
+adders.py
+dicts.py
+mymod2.py
+collector.py
+code\__pycache__ ...
+code\a1 ...
+code\a1\b ...
+a1.py
+mod.py
+code\a1\b\__pycache__ ...
+code\dir1 ...
+__init__.py
+code\dir1\__pycache__ ...
+code\dir1\dir2 ...
+__init__.py
+mod.py
+code\dir1\dir2\__pycache__ ...
+code\dualpkg ...
+__init__.py
+m1.py
+m2.py
+code\dualpkg\__pycache__ ...
+code\mypkg ...
+__init__.py
+mymod.py
+code\mypkg\__pycache__ ...
+code\ns2 ...
+code\ns3 ...
+code\ns3\dir ...
+ns2.py
+code\ns3\dir\__pycache__ ...
+code\ns4 ...
+code\ns4\dir1 ...
+code\ns4\dir1\sub ...
+code\ns4\dir2 ...
+code\ns4\dir2\sub ...
+__init__.py
+code\ns4\dir2\sub\__pycache__ ...
+code\ns ...
+code\ns\dir1 ...
+code\ns\dir1\sub ...
+mod1.py
+code\ns\dir1\sub\__pycache__ ...
+code\ns\dir1\sub\pkg ...
+__init__.py
+code\ns\dir1\sub\pkg\__pycache__ ...
+code\ns\dir2 ...
+code\ns\dir2\sub ...
+mod2.py
+code\ns\dir2\sub\__pycache__ ...
+code\ns\dir2\sub\lower ...
+mod3.py
+code\ns\dir2\sub\lower\__pycache__ ...
+code\pkg ...
+__init__.py
+eggs.py
+main.py
+spam.py
+code\pkg\__pycache__ ...
+code\py2x ...
+script0.py
+code\py3x ...
+script0.py
+code\py3x\__pycache__ ...
+code\pydoc ...
+pydoc.html
+timeit.html
+Visited 378 files and 40 dirs
+--------------------------------------------------------------------------------
+Source files=>313, lines=>13846
+By Types:
+{'.c': {'files': 0, 'lines': 0},
+ '.cgi': {'files': 0, 'lines': 0},
+ '.cxx': {'files': 0, 'lines': 0},
+ '.h': {'files': 0, 'lines': 0},
+ '.html': {'files': 4, 'lines': 479},
+ '.i': {'files': 0, 'lines': 0},
+ '.py': {'files': 309, 'lines': 13367},
+ '.pyw': {'files': 0, 'lines': 0}}
+
+Check sums: 13846 313
+
+Python only walk:
+{'.py': {'files': 309, 'lines': 13367}, '.pyw': {'files': 0, 'lines': 0}}

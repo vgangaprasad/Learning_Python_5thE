@@ -1,0 +1,585 @@
+D:\Books\5E\LP5E\Release\LP5E-example-code>
+    lp5e-code-1.0-jun1813\__admin__\diffall.py 
+        lp5e-code-1.0-feb2813 lp5e-code-1.0-jun1813 
+        > lp5e-code-1.0-jun1813\__admin__\diffall-run-full.txt
+
+--------------------
+Comparing lp5e-code-1.0-feb2813 to lp5e-code-1.0-jun1813
+Directory lists are identical
+Comparing contents
+README.txt DIFFERS
+--------------------
+Comparing lp5e-code-1.0-feb2813\__admin__ to lp5e-code-1.0-jun1813\__admin__
+Files unique to lp5e-code-1.0-jun1813\__admin__
+... diffall-run-full.txt
+Comparing contents
+cleanpyc-run.txt DIFFERS
+cleanpyc.py DIFFERS
+diffall-run.txt DIFFERS
+diffall.py matches
+dirdiff.py matches
+visitor.py matches
+visitor_sloc-run.txt DIFFERS
+visitor_sloc.py matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\__admin__\__pycache__ to lp5e-code-1.0-jun1813\__admin__\__pycache__
+Files unique to lp5e-code-1.0-jun1813\__admin__\__pycache__
+... visitor.cpython-33.pyc
+... dirdiff.cpython-33.pyc
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code to lp5e-code-1.0-jun1813\code
+Files unique to lp5e-code-1.0-feb2813\code
+... final-exercise-code.txt
+Files unique to lp5e-code-1.0-jun1813\code
+... primes.py
+... countdown.py
+... factorials.py
+... reversals.py
+... exercise-II-1.txt
+... maker.py
+... reader.py
+... exercise-III-4.txt
+... adders.py
+... dicts.py
+... exercise-IV-7.txt
+... mymod2.py
+... collector.py
+... exercise-final-selfstudy-code.txt
+Comparing contents
+a.py matches
+access-desc-test.py matches
+access-test.py matches
+access.py matches
+access1.py matches
+access2.py matches
+access2_builtins0.py matches
+access2_builtins1.py matches
+access2_builtins2.py matches
+access2_builtins2b.py matches
+access2_builtins3.py matches
+access2_builtins3b.py matches
+access2_builtins4.py matches
+access2_inserts.py matches
+access_builtins.py matches
+access_builtins_desc.py matches
+access_desc.py matches
+adder.py matches
+adder2.py matches
+alls.py matches
+argtest.py matches
+argtest_testmeth.py matches
+asserter.py matches
+attrs1.py matches
+b.py matches
+bad.py matches
+badly.exc matches
+badly.py matches
+bothmethods.py matches
+bothmethods_decorators.py matches
+brian matches
+c.py matches
+callables.py matches
+calltracer-descr.py DIFFERS
+calltracer.py matches
+Certificate.html matches
+certificate.py matches
+Certificate.txt matches
+changer.py matches
+classexc.py matches
+classexc2.py matches
+classscope.py matches
+classtools.py matches
+classtree.py matches
+commuter.py matches
+contains.py matches
+contains_yield.py matches
+converters.py matches
+csvdata.txt matches
+data.bin matches
+data.txt matches
+datafile.pkl matches
+decoall-deco-any.py matches
+decoall-deco-any2.py matches
+decoall-deco-any3.py matches
+decoall-manual.py matches
+decoall-meta-any.py matches
+decoall-meta-any2.py matches
+decoall-meta-any3.py matches
+decoall-meta.py matches
+decoargs-vs-annotations.py matches
+decorator1.py matches
+decorator2.py matches
+decorator3.py matches
+decorator4.py matches
+decorator5.py matches
+decotools.py matches
+desc-computed.py matches
+desc-person-nested.py matches
+desc-person.py matches
+desc-powers.py matches
+desc-state-desc.py matches
+desc-state-inst.py matches
+dicttable.py matches
+divbad.py matches
+docstr.py matches
+docstrings.py matches
+domparse.py matches
+employees.py matches
+etreeparse.py matches
+except-finally.py matches
+excparse.py matches
+excs.py matches
+exctools.py matches
+exctools_deco.py matches
+exiter.py matches
+exiter2.py matches
+extend-deco.py matches
+extend-manual.py matches
+extend-meta.py matches
+factory.py matches
+formaterror.txt matches
+formats.py matches
+formats_currency.py matches
+formats_currency2.py matches
+ftpfile.py matches
+future.py matches
+getattr-builtins.py matches
+getattr-computed.py matches
+getattr-delegate.py matches
+getattr-person.py matches
+getattr-powers.py matches
+getattr-v-getattr.py matches
+getattr1.py matches
+getattr2.py matches
+getattribute-computed.py matches
+getattribute-person.py matches
+getattribute-powers.py matches
+getattribute-powers2.py matches
+getattribute1.py matches
+gui1.py matches
+ham matches
+index.html matches
+input.txt matches
+inter2.py matches
+interact.py matches
+interfacetracer.py matches
+kaboom.py matches
+lambdas1.py matches
+latindata matches
+listcomp-speed.txt matches
+lister.py matches
+listinherited-reprloop-out.txt matches
+listinherited-reprloop.py matches
+listinherited.py matches
+listinherited2.py matches
+listinstance-exercise.py matches
+listinstance.py matches
+listinstance2.py matches
+listtree-out1.txt matches
+listtree.py matches
+listtree2.py matches
+listtree2x-out.txt matches
+listtree3x-out.txt matches
+lp5e-large.jpg DIFFERS
+lp5e-small.gif DIFFERS
+lunch.py matches
+main.py matches
+makedb.py matches
+makeopen.py matches
+makeopen_class.py matches
+manage-inst-deco.py matches
+manage-inst-meta.py matches
+manynames.py matches
+mapattrs-lister.py matches
+mapattrs-slots.py matches
+mapattrs.py matches
+mapattrs_getattr.py matches
+mapattrs_noslots.py matches
+mergedexc.py matches
+metaclass1-2x-nosuper.py matches
+metaclass1-2x.py matches
+metaclass1.py matches
+metaclass2.py matches
+metaclass3.py matches
+metaclass4-super.py matches
+metaclass4.py matches
+metaclass5-hmm.py matches
+metaclass5.py matches
+metaclass5b.py matches
+metainstance.py matches
+minmax.py matches
+minmax2.py matches
+mins.py matches
+mod.py DIFFERS
+mod1.py matches
+mod2.py matches
+mod3.py matches
+moda.py matches
+modb.py matches
+module1.py matches
+module2.py matches
+multiset.py matches
+mybooks.xml matches
+myclient.py matches
+mydir.py matches
+myfile matches
+myfile.py matches
+mylist.py matches
+mymap.py matches
+mymod.py DIFFERS
+mypydoc.py matches
+mysub.py matches
+nested1.py matches
+nested2.py matches
+nested3.py matches
+nestexc.py matches
+number.py matches
+oops.py matches
+oops2.py matches
+ora-lp.jpg matches
+otherfile.py matches
+parrot.py matches
+patternparse.py matches
+permute.py matches
+person-composite.py matches
+person-department.py matches
+person.py matches
+persondb.bak matches
+persondb.dat matches
+persondb.dir matches
+pizzashop.py matches
+print3.py matches
+print3_alt1.py matches
+print3_alt2.py matches
+printnest.py matches
+private0.py matches
+prop-computed.py matches
+prop-desc-equiv.py matches
+prop-person-deco.py matches
+prop-person.py matches
+prop-powers.py matches
+pseudoprivate.py matches
+py matches
+pybench.py matches
+pybench2.py matches
+pybench2_cases-results-a-t.txt matches
+pybench2_cases-results-a.txt matches
+pybench2_cases-results.txt matches
+pybench2_cases.py matches
+pybench_cases-results.txt matches
+pybench_cases.py matches
+pybench_cases0-results.txt matches
+pybench_cases0.py matches
+pybench_cases2-results-a-t.txt matches
+pybench_cases2-results-a.txt matches
+pybench_cases2-results.txt matches
+pybench_cases2.py matches
+pydoc-py33.py matches
+python_snake_ora.gif matches
+PythonPoweredSmall.gif matches
+rangetest.py matches
+rangetest1.py matches
+rangetest1_test.py matches
+rangetest_test.py matches
+recur1.py matches
+recur2.py matches
+registry-deco.py matches
+reloadall.py matches
+reloadall2.py matches
+reloadall3.py matches
+robin2.py matches
+robin3.py matches
+runme.py matches
+saveit.txt matches
+savetree.txt matches
+saxparse.py matches
+scramble.py matches
+script.py matches
+script0.py matches
+script1.py matches
+script2.py matches
+setcolor.py matches
+setsubclass.py matches
+setwrapper.py matches
+shopfile.pkl matches
+showargs.py matches
+simple.py matches
+singletons.py matches
+skipper.py matches
+skipper_2x.py matches
+skipper_yield.py matches
+slots-test.py matches
+small.py matches
+spam.txt matches
+spam_class.py matches
+spam_class2.py matches
+spam_static.py matches
+spam_static_deco.py matches
+specialize.py matches
+squares.py matches
+squares_manual.py matches
+squares_nonyield.py matches
+squares_yield.py matches
+streams.py matches
+sumtree.py matches
+sumtree2.py matches
+temp.py matches
+temp2 matches
+temp3 matches
+test.txt matches
+testjson.txt matches
+testmixin.py matches
+testmixin0.py matches
+testprint3.py matches
+testseqs.py matches
+text.py matches
+threenames.py matches
+timer.py matches
+timer0.py matches
+timer2.py matches
+timer3.py matches
+timerdeco-test.py matches
+timerdeco.py matches
+timerdeco1.py matches
+timerdeco2.py matches
+timeseqs-results.txt matches
+timeseqs.py matches
+timeseqs2.py matches
+timeseqs2B.py matches
+timeseqs3.py matches
+timeseqs_timer2.py matches
+timeseqs_timer3.py matches
+timesqrt.py matches
+trace.py matches
+trace_ns.py matches
+tracer0.py matches
+tracer1.py matches
+tracer2.py matches
+trispam.txt matches
+trispamup.txt matches
+typesubclass.py matches
+unders.py matches
+uni2x.txt matches
+unidata.txt matches
+uppdatedb.py matches
+upper.py matches
+utf8data matches
+utfdata matches
+validate_descriptors1.py matches
+validate_descriptors2.py matches
+validate_getattr.py matches
+validate_getattribute.py matches
+validate_properties.py matches
+validate_tester.py matches
+validate_tester2.py matches
+what.py matches
+withas.py matches
+xxx¥ matches
+zoo.py matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\__pycache__ to lp5e-code-1.0-jun1813\code\__pycache__
+Files unique to lp5e-code-1.0-jun1813\code\__pycache__
+... reversals.cpython-33.pyc
+... dicts.cpython-33.pyc
+... mymod2.cpython-33.pyc
+... mymod.cpython-33.pyc
+... factorials.cpython-33.pyc
+Comparing contents
+access.cpython-33.pyo matches
+access_builtins.cpython-33.pyo matches
+rangetest.cpython-33.pyo matches
+rangetest1.cpython-33.pyo matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\a1 to lp5e-code-1.0-jun1813\code\a1
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\a1\b to lp5e-code-1.0-jun1813\code\a1\b
+Directory lists are identical
+Comparing contents
+a1.py matches
+mod.py matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\a1\b\__pycache__ to lp5e-code-1.0-jun1813\code\a1\b\__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\dir1 to lp5e-code-1.0-jun1813\code\dir1
+Directory lists are identical
+Comparing contents
+__init__.py matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\dir1\__pycache__ to lp5e-code-1.0-jun1813\code\dir1\__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\dir1\dir2 to lp5e-code-1.0-jun1813\code\dir1\dir2
+Directory lists are identical
+Comparing contents
+__init__.py matches
+mod.py matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\dir1\dir2\__pycache__ to lp5e-code-1.0-jun1813\code\dir1\dir2\__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\dualpkg to lp5e-code-1.0-jun1813\code\dualpkg
+Directory lists are identical
+Comparing contents
+__init__.py matches
+m1.py matches
+m2.py matches
+results.txt matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\dualpkg\__pycache__ to lp5e-code-1.0-jun1813\code\dualpkg\__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\mypkg to lp5e-code-1.0-jun1813\code\mypkg
+Directory lists are identical
+Comparing contents
+__init__.py matches
+mymod.py matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\mypkg\__pycache__ to lp5e-code-1.0-jun1813\code\mypkg\__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns2 to lp5e-code-1.0-jun1813\code\ns2
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns3 to lp5e-code-1.0-jun1813\code\ns3
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns3\dir to lp5e-code-1.0-jun1813\code\ns3\dir
+Directory lists are identical
+Comparing contents
+ns2.py matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns3\dir\__pycache__ to lp5e-code-1.0-jun1813\code\ns3\dir\__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns4 to lp5e-code-1.0-jun1813\code\ns4
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns4\dir1 to lp5e-code-1.0-jun1813\code\ns4\dir1
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns4\dir1\sub to lp5e-code-1.0-jun1813\code\ns4\dir1\sub
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns4\dir2 to lp5e-code-1.0-jun1813\code\ns4\dir2
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns4\dir2\sub to lp5e-code-1.0-jun1813\code\ns4\dir2\sub
+Directory lists are identical
+Comparing contents
+__init__.py matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns4\dir2\sub\__pycache__ to lp5e-code-1.0-jun1813\code\ns4\dir2\sub\__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns to lp5e-code-1.0-jun1813\code\ns
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns\dir1 to lp5e-code-1.0-jun1813\code\ns\dir1
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns\dir1\sub to lp5e-code-1.0-jun1813\code\ns\dir1\sub
+Directory lists are identical
+Comparing contents
+mod1.py matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns\dir1\sub\__pycache__ to lp5e-code-1.0-jun1813\code\ns\dir1\sub\__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns\dir1\sub\pkg to lp5e-code-1.0-jun1813\code\ns\dir1\sub\pkg
+Directory lists are identical
+Comparing contents
+__init__.py matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns\dir1\sub\pkg\__pycache__ to lp5e-code-1.0-jun1813\code\ns\dir1\sub\pkg\__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns\dir2 to lp5e-code-1.0-jun1813\code\ns\dir2
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns\dir2\sub to lp5e-code-1.0-jun1813\code\ns\dir2\sub
+Directory lists are identical
+Comparing contents
+mod2.py matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns\dir2\sub\__pycache__ to lp5e-code-1.0-jun1813\code\ns\dir2\sub\__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns\dir2\sub\lower to lp5e-code-1.0-jun1813\code\ns\dir2\sub\lower
+Directory lists are identical
+Comparing contents
+mod3.py matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\ns\dir2\sub\lower\__pycache__ to lp5e-code-1.0-jun1813\code\ns\dir2\sub\lower\__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\pkg to lp5e-code-1.0-jun1813\code\pkg
+Directory lists are identical
+Comparing contents
+__init__.py matches
+eggs.py matches
+main.py matches
+spam.py matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\pkg\__pycache__ to lp5e-code-1.0-jun1813\code\pkg\__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\py2x to lp5e-code-1.0-jun1813\code\py2x
+Directory lists are identical
+Comparing contents
+script0.py matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\py3x to lp5e-code-1.0-jun1813\code\py3x
+Directory lists are identical
+Comparing contents
+script0.py matches
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\py3x\__pycache__ to lp5e-code-1.0-jun1813\code\py3x\__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-feb2813\code\pydoc to lp5e-code-1.0-jun1813\code\pydoc
+Directory lists are identical
+Comparing contents
+pydoc.html matches
+timeit.html matches
+========================================
+Diffs found: 14
+- files differ at lp5e-code-1.0-feb2813\README.txt - lp5e-code-1.0-jun1813\README.txt
+- unique files at lp5e-code-1.0-feb2813\__admin__ - lp5e-code-1.0-jun1813\__admin__
+- files differ at lp5e-code-1.0-feb2813\__admin__\cleanpyc-run.txt - lp5e-code-1.0-jun1813\__admin__\cleanpyc-run.txt
+- files differ at lp5e-code-1.0-feb2813\__admin__\cleanpyc.py - lp5e-code-1.0-jun1813\__admin__\cleanpyc.py
+- files differ at lp5e-code-1.0-feb2813\__admin__\diffall-run.txt - lp5e-code-1.0-jun1813\__admin__\diffall-run.txt
+- files differ at lp5e-code-1.0-feb2813\__admin__\visitor_sloc-run.txt - lp5e-code-1.0-jun1813\__admin__\visitor_sloc-run.txt
+- unique files at lp5e-code-1.0-feb2813\__admin__\__pycache__ - lp5e-code-1.0-jun1813\__admin__\__pycache__
+- unique files at lp5e-code-1.0-feb2813\code - lp5e-code-1.0-jun1813\code
+- files differ at lp5e-code-1.0-feb2813\code\calltracer-descr.py - lp5e-code-1.0-jun1813\code\calltracer-descr.py
+- files differ at lp5e-code-1.0-feb2813\code\lp5e-large.jpg - lp5e-code-1.0-jun1813\code\lp5e-large.jpg
+- files differ at lp5e-code-1.0-feb2813\code\lp5e-small.gif - lp5e-code-1.0-jun1813\code\lp5e-small.gif
+- files differ at lp5e-code-1.0-feb2813\code\mod.py - lp5e-code-1.0-jun1813\code\mod.py
+- files differ at lp5e-code-1.0-feb2813\code\mymod.py - lp5e-code-1.0-jun1813\code\mymod.py
+- unique files at lp5e-code-1.0-feb2813\code\__pycache__ - lp5e-code-1.0-jun1813\code\__pycache__
